@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_image_inicator_background">
+
+        <ImageView
+            android:id="@+id/item_empty_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/android_padding_middle"
+            android:background="@drawable/selector_payment_item" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/android_padding_normal"
+        android:background="@drawable/selector_setting_item_grey_to_white"
+        android:textColor="@drawable/selector_item_text"
+        android:text="@string/no_outpaient_charge_list"/>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gwi.selfplatform.ui.activity.pay.RecipeDetailActivity"
+    tools:showIn="@layout/activity_recipe_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/CostsQueryDetailBox"
+                android:orientation="vertical">
+
+                <!-- ROW1 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_patient_name_colon" />
+
+                    <TextView
+                        android:id="@+id/patient_name"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW2 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_prescribing_sections_colon" />
+
+                    <TextView
+                        android:id="@+id/prescribing_sections"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- bug2170 LiuTao 20160802 delete -->
+
+                <!-- ROW4 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_doctors_prescribing_colon" />
+
+                    <TextView
+                        android:id="@+id/doctors_prescribing"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW5 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_prescribing_time_colon" />
+
+                    <TextView
+                        android:id="@+id/prescribing_time"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW6 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_medical_card_colon" />
+
+                    <TextView
+                        android:id="@+id/medical_card"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW7 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_prescription_amount_colon" />
+
+                    <TextView
+                        android:id="@+id/prescription_amount"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:textColor="@color/cqd_prescription_amount_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.gwi.selfplatform.ui.view.AutoWrapView
+                android:id="@+id/wrap_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

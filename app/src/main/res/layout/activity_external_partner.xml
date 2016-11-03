@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <TextView
+        android:id="@+id/pay_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:gravity="center"
+        android:textColor="@color/red_pink"
+        android:textSize="@dimen/medium_text_size" />
+
+    <include
+        android:id="@+id/regist_layout"
+        layout="@layout/include_settle_item"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/recipe_layout"
+        layout="@layout/recipe_partner"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/charge_layout"
+        layout="@layout/charge_partner"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/pay_result_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/android_margin_normal"
+            android:background="@drawable/selector_btn_primary"
+            android:padding="@dimen/android_padding_middle"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </FrameLayout>
+</LinearLayout>

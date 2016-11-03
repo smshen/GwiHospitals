@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gwi.selfplatform.ui.view.GWISupportedPayTypeWidget
+        android:id="@+id/outpatient_pay_type_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/outpatient_charge_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:textColor="@color/white"
+        android:text="确认支付"
+        android:background="@drawable/selector_btn_primary"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/depts_select_order_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_background_primary"
+        android:padding="@dimen/android_padding_normal"
+        android:gravity="center"
+        android:textColor="@color/grey_800"
+        android:text="请选择预约时间：2015年10月"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/depts_select_date_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:background="@drawable/shape_search_border"
+        android:orientation="horizontal">
+
+        <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/depts_expand_query_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/android_padding_micro"
+            android:hint="请输入要查询的科室"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/depts_expand_query_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            />
+    </LinearLayout>
+
+   <cz.kinst.jakub.view.StatefulLayout
+       android:id="@+id/stateful_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ExpandableListView
+           android:id="@android:id/list"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:groupIndicator="@null"
+           />
+   </cz.kinst.jakub.view.StatefulLayout>
+
+</LinearLayout>

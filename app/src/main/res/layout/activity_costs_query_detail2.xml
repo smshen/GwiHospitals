@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/CostsQueryDetailBox"
+                android:orientation="vertical">
+
+                <!-- ROW1 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_patient_name_colon" />
+
+                    <TextView
+                        android:id="@+id/patient_name"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW2 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_hospital_number_colon" />
+
+                    <TextView
+                        android:id="@+id/hospital_number"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW3 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_hospital_departments_colon" />
+
+                    <TextView
+                        android:id="@+id/hospital_departments"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW4 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_doctors_bed_mrg_colon" />
+
+                    <TextView
+                        android:id="@+id/doctors_bed_mrg"
+                        style="@style/CostsQueryDetailBoxTextR" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                <!-- ROW5 -->
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_day_amount_colon" />
+
+                    <TextView
+                        android:id="@+id/day_amount"
+                        style="@style/CostsQueryDetailBoxTextR" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.gwi.selfplatform.ui.view.AutoWrapView
+                android:id="@+id/wrap_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

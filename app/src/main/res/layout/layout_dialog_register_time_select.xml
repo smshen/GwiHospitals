@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView android:id="@+id/rtc_doctor_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_doctor"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/android_margin_normal"
+            android:orientation="vertical">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/darker_gray"
+                android:text="名佳佳 主治医生"/>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/darker_gray"
+                android:layout_weight="1"
+                android:text="心血管内科"/>
+           <LinearLayout android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:orientation="horizontal"
+               android:textColor="@color/darker_gray"
+               android:layout_weight="1">
+                <TextView 
+                android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/darker_gray"
+                android:text="挂号费："/>
+                <TextView 
+                android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/darker_gray"
+                android:text="￥5.00"/>
+           </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/bg_btn_orange"
+        android:background="@color/gray_light"
+        android:text="就诊时间（9月9日）"/>
+    
+    <RadioGroup android:id="@+id/rts_select_morning"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:layout_height="wrap_content">
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_register_time_selected"
+            android:checked="false"
+            android:text="08:00 - 09:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:drawableRight="@drawable/selector_register_time_selected"
+            android:button="@null"
+            android:text="09:00 - 10:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:button="@null"
+            android:text="10:00 - 11:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:drawableRight="@drawable/selector_register_time_selected"
+            android:button="@null"
+            android:text="11:00 - 12:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+    </RadioGroup>
+    
+    <RadioGroup android:id="@+id/rts_select_afternoon"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_register_time_selected"
+            android:text="13:00 - 14:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:button="@null"
+            android:text="14:00 - 15:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/selector_register_time_selected"
+            android:padding="@dimen/android_padding_middle"
+            android:button="@null"
+            android:text="15:00 - 16:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_register_time_selected"
+            android:text="16:00 - 17:00"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+    </RadioGroup>
+</LinearLayout>

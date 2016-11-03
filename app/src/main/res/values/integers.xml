@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_ratingbar_rating">4</integer>
+    <integer name="input_length_micro">4</integer>
+    <integer name="input_length_small">8</integer>
+    <integer name="input_length_medium">20</integer>
+    <integer name="input_length_large">100</integer>
+
+    <integer name="comm_range_average">1</integer>
+    <integer name="comm_name_txt_leng">4</integer>
+
+    <!-- CostsQueryDetailActivity -->
+    <integer name="cqd_length_range_name">2</integer>
+    <integer name="cqd_length_range_num">1</integer>
+    <integer name="cqd_length_range_money">1</integer>
+
+    <!-- CostsQueryDetail2Activity -->
+    <integer name="cqd2_length_range_name">4</integer>
+    <integer name="cqd2_length_range_num">1</integer>
+    <integer name="cqd2_length_range_unit">1</integer>
+    <integer name="cqd2_length_range_medicare">2</integer>
+    <integer name="cqd2_length_range_money">2</integer>
+
+    <!-- InspectionQueryDetailActivity -->
+    <integer name="aqd_length_range_name">4</integer>
+    <integer name="aqd_length_range_ref">4</integer>
+    <integer name="aqd_length_range_result">3</integer>
+    <integer name="aqd_length_range_unit">2</integer>
+
+    <integer name="aqd_length_range_other">2</integer>
+
+</resources>

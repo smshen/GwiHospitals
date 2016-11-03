@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/android_margin_normal"
+                android:background="@drawable/bg_form_header"
+                android:gravity="center_vertical"
+                android:text="概述"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/disease_detail_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray_depart_item"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/android_margin_normal"
+                android:layout_marginTop="@dimen/android_margin_normal"
+                android:background="@drawable/bg_form_header"
+                android:gravity="center_vertical"
+                android:text="科室"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_gray_depart_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/disease_detail_depart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <TextView
+                    android:id="@+id/disease_detail_goto_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/android_margin__big"
+                    android:clickable="true"
+                    android:text="去挂号？" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/android_margin_normal"
+                android:background="@drawable/bg_form_header"
+                android:gravity="center_vertical"
+                android:text="详情"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_gray_depart_item" />
+
+            <LinearLayout
+                android:id="@+id/disease_details_layout_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_reason"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="病因描述" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/disease_details_reaseon_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/disease_details_reason_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_symptom"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="症状描述" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/disease_details_symptom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/disease_details_symptom_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_test"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="检查" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/disease_details_test_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/disease_details_test_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_diagnosis"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="诊断与鉴别" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/disease_details_diagnosis_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/disease_details_diagnosis_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_prevent"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="预防" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/disease_details_prevent_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/disease_details_prevent_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_syndrome"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="并发症" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/disease_details_syndrome_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/disease_details_syndrome_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/disease_details_treatment"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onItemClick"
+                    android:text="治疗" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+            </LinearLayout>
+
+            <!--         <View -->
+            <!--             android:layout_width="match_parent" -->
+            <!--             android:layout_height="0.5dp" -->
+            <!--             android:background="#80737373" /> -->
+
+            <LinearLayout
+                android:id="@+id/disease_details_treatment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/disease_details_treatment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/android_padding_normal"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

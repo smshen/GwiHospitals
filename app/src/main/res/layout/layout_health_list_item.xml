@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:id="@+id/itemIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:background="@drawable/bg_edittext"
+        android:src="@drawable/loading_01"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView 
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/android_padding_normal"
+            android:paddingEnd="@dimen/android_padding_normal"
+            android:layout_marginTop="@dimen/android_padding_micro"
+            android:drawablePadding="2dp"
+            android:text="标题"
+        />
+
+        <TextView
+            android:id="@+id/itemContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/darker_gray"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/android_padding_normal"
+            android:paddingEnd="@dimen/android_padding_normal"
+         
+            android:drawablePadding="2dp"
+            android:text="描述"
+        />
+    </LinearLayout>
+</LinearLayout>

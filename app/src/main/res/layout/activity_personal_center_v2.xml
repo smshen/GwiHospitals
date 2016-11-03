@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gwi.selfplatform.ui.activity.user.PersonalCenterV2Activity">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/personal_center_header">
+
+                <TextView
+                    android:id="@+id/personal_center_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/android_padding_normal"
+                    android:drawableTop="@drawable/head_portrait"
+                    android:gravity="center"
+                    android:text="谭琪琪"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <TableLayout
+                android:id="@+id/reg_select_v2_items_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/personal_center_fill_detail"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/selector_fill_peronal_detail" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:text="完善个人资料"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <TableRow
+                    android:id="@+id/personal_center_modify_pwd"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/selector_bookingform_1"
+                            android:textColor="@drawable/sel_password" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:text="修改密码"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <TableRow
+                    android:id="@+id/personal_center_my_medical_card"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/sel_medical_card" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:text="我的诊疗卡"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <TableRow
+                    android:id="@+id/personal_center_setting"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/sel_setup" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:text="系统设置"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/android_margin_middle"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:background="@drawable/selector_btn_primary"
+                android:textColor="@color/white"
+                android:text="注销登录"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

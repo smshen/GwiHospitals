@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/android_padding_normal" >
+
+    <CheckedTextView
+        android:id="@+id/sym_to_dis_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/android_margin_normal"
+        android:layout_marginRight="@dimen/android_margin_normal"
+        android:background="@drawable/selector_indicator_circle"
+        android:checked="true"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="gravity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/selector_text_color_checked_white"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/sym_to_dis_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="泌尿管感染"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_gray_depart_item" />
+
+</LinearLayout>

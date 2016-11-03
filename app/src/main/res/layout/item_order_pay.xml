@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/reportItem"
+    android:layout_height="wrap_content" 
+    android:layout_margin="10dp" 
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+    
+     <TextView 
+         android:id="@+id/title_order"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/real_gray"
+         android:textSize="@dimen/medium_text_size"
+         android:background="@drawable/bg_form_header"/>
+
+    <LinearLayout
+        android:id="@+id/order_list" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_form_content"
+        android:orientation="vertical">
+        
+         <LinearLayout 
+             android:id="@+id/busType_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/layout_margin"
+            android:layout_marginBottom="@dimen/layout_margin"
+	        android:orientation="horizontal">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/GWISmallText"
+	            android:text="业务类型："/>
+	        
+	        <TextView 
+	            android:id="@+id/busType"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/GWISmallText"
+	            />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/repTime_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:orientation="horizontal">
+	        
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                android:text="@string/definy_name"/>
+            
+            <TextView 
+                android:id="@+id/definy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                />
+            
+           
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                android:text="诊疗卡号："/>
+            
+            <TextView 
+                android:id="@+id/sendTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                android:text="@string/repDeptName"/>
+            
+            <TextView 
+                android:id="@+id/repDeptName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:orientation="horizontal">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/GWISmallText"
+	            android:text="@string/doctor_belong"/>
+	        
+	        <TextView 
+	            android:id="@+id/doctor_belong"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/GWISmallText"
+	            />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                android:text="诊疗卡号："/>
+            
+            <TextView 
+                android:id="@+id/cardNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                />
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                android:text="下单时间："/>
+            
+            <TextView 
+                android:id="@+id/createTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/GWISmallText"
+                />
+        </LinearLayout>
+         
+           <LinearLayout 
+                android:id="@+id/layout_card"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:orientation="horizontal">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/GWISmallText"
+                    android:text="订单金额："/>
+                
+                <TextView 
+                    android:id="@+id/payMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red_hos_personal"
+                    style="@style/GWISmallText"
+                    />
+        </LinearLayout>
+        
+           <LinearLayout 
+	            android:id="@+id/status_title"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="@dimen/layout_margin"
+	            android:orientation="horizontal">
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                style="@style/GWISmallText"
+	                android:text="订单状态："/>
+	            
+	            <TextView 
+	                android:id="@+id/status"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/red_hos_personal"
+	                style="@style/GWISmallText"
+	                android:gravity="center_vertical|left"
+	                />
+        </LinearLayout>
+        
+          <LinearLayout 
+                android:id="@+id/layout_notice"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/GWISmallText"
+                    android:textColor="@color/red_hos_personal"
+                    android:text="@string/notice"/>
+                
+                <TextView 
+                    android:id="@+id/noticeTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/red_hos_personal"
+                    style="@style/GWISmallText"
+                    android:gravity="center_vertical|left"/>
+            </LinearLayout>
+            
+         <!-- <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             <LinearLayout 
+	            android:id="@+id/layout_card"
+	            android:layout_width="fill_parent"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:weightSum="1.0">
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                style="@style/GWISmallText"
+	                android:text="诊疗卡号："/>
+	            
+	            <TextView 
+	                android:id="@+id/cardNum"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.9"
+	                style="@style/GWISmallText"
+	                android:gravity="center_vertical|left"/>
+	                
+	        </LinearLayout>
+            <Button 
+                android:id="@+id/detailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/login_btn_bg"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dip"
+                android:layout_marginBottom="20dip"
+                android:text="去结算"/>
+         </LinearLayout> -->
+    </LinearLayout>
+  
+</LinearLayout>

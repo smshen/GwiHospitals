@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/android_margin_normal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_left"
+        android:drawableTop="@drawable/bookingform2"
+        android:paddingBottom="@dimen/size8"
+        android:paddingLeft="@dimen/size16"
+        android:drawablePadding="@dimen/android_padding_micro"
+        android:paddingRight="@dimen/size12"
+        android:paddingTop="@dimen/size8"
+        android:text="我的挂号单" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:id="@+id/queue_check_in_dept_with_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="内分泌科（门诊楼二楼）" />
+
+            <TextView
+                android:id="@+id/queue_check_in_dct_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/android_margin_micro"
+                android:paddingTop="@dimen/android_margin_micro"
+                android:text="挂号医生：张三" />
+
+            <TextView
+                android:id="@+id/queue_check_in_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="挂号时间：2015-10-25 10:15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/queue_check_in"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/android_margin_normal"
+            android:layout_marginRight="@dimen/size16"
+            android:background="@drawable/selector_btn_primary"
+            android:padding="@dimen/android_padding_normal"
+            android:text="报到"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

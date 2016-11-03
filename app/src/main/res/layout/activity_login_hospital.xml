@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/login_et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/android_margin_middle"
+            android:layout_marginRight="@dimen/android_margin_middle"
+            android:layout_marginTop="@dimen/android_margin_middle"
+            android:background="@drawable/bg_corner_gray"
+            android:textSize="@dimen/medium_text_size"
+            android:hint="手机号码"
+            android:padding="8dp"
+            android:singleLine="true"
+            />
+
+
+        <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/login_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_et_user"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/android_margin_middle"
+            android:layout_marginRight="@dimen/android_margin_middle"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_corner_gray"
+            android:textSize="@dimen/medium_text_size"
+            android:hint="密码"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:password="true"/>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_password"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:padding="@dimen/android_padding_normal"
+        android:background="@drawable/login_btn_bg"
+        android:textSize="@dimen/medium_text_size"
+        android:text="登录"
+        android:textColor="@android:color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/login_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/login_btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_bottom_bg"
+            android:padding="8dp"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/medium_text_size"
+            android:text="免费注册" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@android:color/darker_gray"
+            android:padding="0dp" />
+
+        <Button
+            android:id="@+id/login_btn_forgetpassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_bottom_bg"
+            android:padding="8dp"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/medium_text_size"
+            android:text="忘记密码?" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/login_ll_bottom"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

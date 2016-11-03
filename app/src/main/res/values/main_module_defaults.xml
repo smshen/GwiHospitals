@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_module_height">95dp</dimen>
+
+    <!-- 主模块描述 -->
+    <string name="label_smart_leading_examining">症状自查，帮您找对科室</string>
+    <string name="label_registered">手机实时挂号，就医更便捷</string>
+    <string name="label_pay_cost">门诊诊间结算，免去排队烦恼</string>
+    <string name="label_top_up">诊疗卡多渠道充值，轻松就医</string>
+    <string name="label_waiting_in_line">实时了解自己的候诊排队情况</string>
+    <string name="label_electronic_leading_examining">手机付款凭证、就诊流程指导</string>
+    <string name="label_registration_record">查询您的挂号单</string>
+    <string name="label_outpatient_service_charge">实时查找您的门诊费用单</string>
+    <string name="label_payment_order">跟踪您的支付宝、微信订单情况</string>
+    <string name="label_among">远程查找化验单，无需现场等待</string>
+    <string name="label_inspection_report">远程查找检查报告，含CT、核磁、X光等</string>
+    <string name="label_price_inquiry">实时了解药品和医疗服务项目价格</string>
+    <string name="label_health_information">每日更新的健康养生知识</string>
+    <string name="label_medical_encyclopedia">医学知识库，帮您解读医学常识</string>
+    <string name="label_map_navigation">医院位置导航及周边商户查找</string>
+    <string name="label_indoor_navigation">室内导航</string>
+    <string name="label_hospital_news">医院动态</string>
+    <string name="label_treatment_guidelines">就诊指南</string>
+    <string name="label_pharmacy">在线查看药品情况</string>
+    <string name="label_admitted_to_hospital">体验更多的住院功能</string>
+    <string name="label_parking">快速帮您定位停车空位</string>
+    <string name="label_hospital_is_introduced">医院基本情况简介</string>
+    <string name="label_user_center">个人资料完善、修改密码等</string>
+
+
+    <!-- 主模块描述文字颜色 -->
+    <color name="desp_smart_leading_examining">#073728</color>
+    <color name="desp_registered">#042730</color>
+    <color name="desp_pay_cost">#2A1043</color>
+    <color name="desp_top_up">#051739</color>
+    <color name="desp_waiting_in_line">#003436</color>
+    <color name="desp_electronic_leading_examining">#02380A</color>
+    <color name="desp_registration_record">#160533</color>
+    <color name="desp_outpatient_service_charge">#262E01</color>
+    <color name="desp_payment_order">#05393E</color>
+    <color name="desp_among">#3B033B</color>
+    <color name="desp_inspection_report">#323604</color>
+    <color name="desp_price_inquiry">#06063D</color>
+    <color name="desp_health_information">#063B32</color>
+    <color name="desp_medical_encyclopedia">#052435</color>
+    <color name="desp_map_navigation">#003E11</color>
+    <color name="desp_pharmacy">#033C36</color>
+    <color name="desp_admitted_to_hospital">#332E01</color>
+    <color name="desp_parking">#051C45</color>
+    <color name="desp_hospital_is_introduced">#410404</color>
+    <color name="desp_user_center">#013324</color>
+
+
+    <!-- 主模块背景颜色 -->
+    <color name="bg_smart_leading_examining">#E9F7F2</color>
+    <color name="bg_registered">#E9F6F9</color>
+    <color name="bg_pay_cost">#F4EEFA</color>
+    <color name="bg_top_up">#E9EFF9</color>
+    <color name="bg_waiting_in_line">#E8F7F8</color>
+    <color name="bg_electronic_leading_examining">#EFFBF1</color>
+    <color name="bg_registration_record">#F9F6FF</color>
+    <color name="bg_outpatient_service_charge">#FDFFF5</color>
+    <color name="bg_payment_order">#F2FEFF</color>
+    <color name="bg_among">#FFF8FF</color>
+    <color name="bg_inspection_report">#FAFBF0</color>
+    <color name="bg_price_inquiry">#F2F2FD</color>
+    <color name="bg_health_information">#F7FFFE</color>
+    <color name="bg_medical_encyclopedia">#F5FCFF</color>
+    <color name="bg_map_navigation">#F6FFF9</color>
+    <color name="bg_pharmacy">#FFF6F6</color>
+    <color name="bg_admitted_to_hospital">#FFFDF3</color>
+    <color name="bg_parking">#F6F6FF</color>
+    <color name="bg_hospital_is_introduced">#F3FFFB</color>
+    <color name="bg_user_center">#F6FFFE</color>
+</resources>

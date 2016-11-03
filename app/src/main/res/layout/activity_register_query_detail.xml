@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gwi.selfplatform.ui.activity.query.RegisterQueryDetailActivity">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register_query_detail_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_background_primary"
+                android:padding="@dimen/android_margin_middle"
+                android:text="" />
+
+            <FrameLayout
+                android:id="@+id/query_detail_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:background="@drawable/bg_detail">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="@dimen/android_margin_middle">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_patient" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_patient_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_depart" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_dept_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_doctor_2" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_dct_name_rank_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_look_position" />
+
+                        <TextView
+                            android:id="@+id/register_query_position"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="就诊时间：" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_date"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_card" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_card_no"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_reg_fee" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_fee"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textColor="@color/colorPrimary" />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/register_query_detail_identity_layout" android:layout_marginTop="@dimen/android_margin_micro">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/label_number_password" />
+
+                        <TextView
+                            android:id="@+id/register_query_detail_identity"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="left" />
+                    </TableRow>
+                </TableLayout>
+
+                <CheckedTextView
+                    android:layout_marginLeft="@dimen/android_margin_middle"
+                    android:id="@+id/register_query_detail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/size32"
+                    android:background="@drawable/selector_take_a_number" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_order_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:background="@drawable/selector_btn_primary"
+                android:text="@string/cancel_appoint"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

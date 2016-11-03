@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/android_margin_middle"
+            android:text="温馨提示：\n更换手机号后，下次登录可使用新手机号码登录。"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/mobile_modify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/android_height_middle"
+            android:layout_margin="@dimen/android_margin_middle"
+            android:background="@drawable/bg_corner_gray"
+            android:hint="您本人新的手机号码"
+            android:padding="@dimen/android_padding_micro" />-->
+
+    <TextView
+        android:id="@+id/mobile_modify_tv_phone_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:paddingBottom="@dimen/android_padding_middle"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:paddingTop="@dimen/android_padding_middle"
+        android:text="温馨提示：\n更换手机号后，下次登录可使用新手机号码登录。"
+        android:textColor="@color/orange_message" />
+
+    <View style="@style/DividerSytle.Normal" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/android_margin_normal">
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/android_padding_normal"
+            android:paddingRight="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_phone_colon" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/mobile_modify_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:padding="@dimen/android_padding_micro"
+                android:singleLine="true" />
+        </TableRow>
+
+        <View
+            style="@style/DividerSytle.Normal"
+            android:layout_marginTop="@dimen/android_margin_normal" />
+
+    </TableLayout>
+</LinearLayout>

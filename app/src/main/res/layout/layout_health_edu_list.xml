@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cmt_ad_height"
+        android:visibility="gone"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp" >
+
+        <ImageView
+            android:id="@+id/cmt_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@drawable/img_health_edu_header"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/home_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black_semi_transparent"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:minWidth="200dp"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="专家带您观看生产全过程"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/health_edu_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="?android:attr/dividerHorizontal"
+        android:dividerHeight="1dp"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:paddingRight="@dimen/android_padding_normal" />
+
+</LinearLayout>

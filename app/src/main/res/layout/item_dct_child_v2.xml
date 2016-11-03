@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/android_padding_middle"
+    android:layout_height="wrap_content"
+    >
+<TextView
+    android:id="@+id/dct_child_timeRegion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="上午"/>
+    <TextView
+        android:id="@+id/dct_child_reg_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/android_margin_normal"
+        android:drawableRight="@drawable/selector_item_arrow"
+        android:text="挂号费8.00"/>
+</LinearLayout>

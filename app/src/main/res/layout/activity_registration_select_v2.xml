@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.gwi.selfplatform.ui.activity.registration.RegistrationSelectV2Activity">
+
+    <include layout="@layout/include_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TableLayout
+            android:id="@+id/reg_select_v2_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/reg_select_v2_appoint"
+                android:clickable="true">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_image_inicator_background">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_middle"
+                        android:src="@drawable/selector_bookingform_1" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/android_padding_normal"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约挂号"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="挂未来7天内的号源"
+                        android:textColor="@drawable/selector_item_text" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TableRow
+                android:id="@+id/reg_select_v2_regist"
+                android:clickable="true">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_image_inicator_background">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_middle"
+                        android:src="@drawable/selector_bookingform_1"
+                        android:textColor="@drawable/selector_image_inicator_background" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/android_padding_normal"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="挂号"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="挂今日的号源"
+                        android:textColor="@drawable/selector_item_text" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TableRow
+                android:id="@+id/reg_select_v2_history"
+                android:clickable="true">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_image_inicator_background">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_middle"
+                        android:src="@drawable/selector_bookingform_1" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/android_padding_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的挂号单"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查询我的挂号记录"
+                        android:textColor="@drawable/selector_item_text" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:id="@+id/reg_select_v2_instruct_layout"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:background="@drawable/shape_rect_white"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Invisible layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/android_margin_middle"
+                        android:background="@drawable/instructions_header"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/instructions" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="挂号须知"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/android_margin_normal"
+                        android:text="预约挂号"
+                        android:textColor="@color/text_color_primary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/android_margin_normal"
+                        android:text="@string/regist_select_inistruct_appoint" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/android_margin_normal"
+                        android:text="直接挂号"
+                        android:textColor="@color/text_color_primary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/android_margin_normal"
+                        android:text="@string/regist_select_inistruct_regist" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/reg_select_v2_click_to_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/android_padding_middle"
+                android:paddingBottom="@dimen/android_padding_middle"
+                android:layout_below="@id/reg_select_v2_instruct_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-40dp"
+                android:clickable="true"
+                android:text="点击展开"
+                android:textColor="@color/text_color_primary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/android_margin_middle"
+                android:background="@drawable/instructions_header"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/android_margin_micro"
+                    android:src="@drawable/instructions" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/arrow_under"
+                    android:text="挂号须知"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

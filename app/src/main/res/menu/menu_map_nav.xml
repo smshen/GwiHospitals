@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_bus"
+         app:showAsAction="never"
+        android:title="公交"/>
+    <item android:id="@+id/menu_drive"
+         app:showAsAction="never"
+        android:title="驾车"/>
+    <item android:id="@+id/menu_walk"
+         app:showAsAction="never"
+        android:title="步行"/>
+
+</menu>

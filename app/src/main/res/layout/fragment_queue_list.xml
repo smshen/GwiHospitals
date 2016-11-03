@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_loading_indicator" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/sencond_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/android_padding_micro">
+
+            <TextView
+                style="style/ListTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/android_padding_normal"
+                android:text="@string/label_my_queue"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_primary"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/size12"
+                android:paddingRight="@dimen/size12"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/size8"
+                android:paddingBottom="@dimen/size8"
+                android:text="@string/refresh"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/DividerSytle"
+            android:layout_height="@dimen/android_divider_height_normal"
+            android:layout_below="@+id/sencond_header" />
+
+        <LinearLayout
+            android:id="@+id/queue_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_image_inicator_background">
+
+                <ImageView
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/android_margin_middle"
+                    android:background="@drawable/selector_waiting" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/android_padding_normal">
+
+                <TextView
+                    style="style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_queue_empty" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_queue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/android_margin_middle"
+            android:layout_marginLeft="@dimen/android_padding_normal"
+            android:layout_marginRight="@dimen/android_padding_normal"
+            android:layout_marginTop="@dimen/android_margin_middle"
+            android:background="@drawable/selector_btn_primary"
+            android:text="@string/action_section_queue"
+            android:textColor="@color/white" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_above="@id/btn_queue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:divider="@color/grey"
+            android:dividerHeight="@dimen/android_divider_height_normal" />
+    </RelativeLayout>
+</LinearLayout>

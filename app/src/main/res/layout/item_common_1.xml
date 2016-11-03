@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/android_padding_middle"
+        android:background="@drawable/selector_image_inicator_background">
+
+        <ImageView
+            android:id="@+id/item_common_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/android_padding_middle"
+            android:background="@drawable/selector_bookingform_1"
+            android:textColor="@drawable/selector_image_inicator_background" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_commonn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="挂号"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@drawable/selector_item_text" />
+
+        <TextView
+            android:id="@+id/item_common_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/android_margin_micro"
+            android:text="挂今日的号源"
+            android:textColor="@drawable/selector_item_text" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27ae83</color>
+    <color name="colorPrimaryDark">#27ae83</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="item_Bg_Primary">#d9f7ee</color>
+
+
+    <!--Theme speicifed -->
+    <color name="btn_primary_pressed">#009688</color>
+    <color name="tab_background_primary">#bedcd4</color>
+    <color name="tab_text_color_primary">#4f4f4f</color>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <color name="wihte_transparent_semi">#80ffffff</color>
+    <color name="transparent_semi">#e00099cc</color>
+    
+    <!-- 蓝色 -->
+    <color name="blue">#0000ff</color>
+    <color name="blue_dark">#4aad93</color>
+    <color name="blue_light">#f1f1f1</color>
+    <color name="blue_sky">#78d5ff</color>
+    
+    <!-- 红色 -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="red_pink">#f699b4</color>
+    <color name="red_hos_personal">#cc7871</color>
+    
+    <!-- 黑色 -->
+    <color name="black">#000</color>
+    <color name="black_semi_transparent">#99313131</color>
+    
+    <!-- 绿色 -->
+    <color name="text_color_primary">#27ae83</color>
+    <color name="green">#2ca431</color>
+    <color name="text_green">#467f1e</color>
+    <color name="green_bg">#87b76d</color>
+    <color name="text_green_light">#4caf50</color>
+    <!-- 8eed8f -->
+    
+    <!-- Teal -->
+    <color name="teal_500">#009688</color>
+    
+     <!-- 灰色 -->
+    <color name="gray">#9E9E9E</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_800">#424242</color>
+     <color name="darker_gray">#808080</color>
+     <color name="layout_bg_gray">#e5e5e5</color>
+     <color name="gray_light">#f7f7f7</color>
+     <color name="bg_gray_depart_item">#e7e7e7</color>
+     <color name="text_gray_depart_item">#4f4f4f</color>
+     
+     <color name="bg_chart">#fefff5</color>
+     <color name="bg_table_header">#f5f5f5</color>
+     <color name="bg_header">#f8f8f8</color>
+     <color name="bg_form">#fff8eb</color>
+
+     <color name="bg_btn_orange">#ffc900</color>
+     <color name="bg_btn_orange_pressed">#e8a21b</color>
+     <color name="bg_btn_blue">#1950a3</color>
+     <color name="bg_btn_blue_pressed">#144091</color>
+    
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    
+    <color name="blue_lake">#b0dfe5</color>
+    
+     <color name="transparent">#00000000</color>
+     <color name="real_gray">#ff666666</color>
+
+    <color name="box_title_color">#d9f7ee</color>
+
+    <!-- CostsQueryDetailActivity -->
+    <color name="cqd_prescription_amount_color">#e8a21b</color>
+    <color name="cqd_unit_num_color">#27ae83</color>
+
+    <!-- ParkingCarActivityActivity -->
+    <color name="pc_listitem_color">#e8eceb</color>
+
+    <color name="alipay_txt_color">#ff33b5e5</color>
+    <color name="alipay_bg_color">#80666666</color>
+    <!-- material design -->
+    <color name="pink_a200">#ff4081</color>
+
+    <color name="orange_message">#FF9000</color>
+</resources>

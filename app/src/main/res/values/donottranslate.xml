@@ -1,0 +1,872 @@
+<resources>
+
+    <!-- 湘雅二医院 -->
+    <!-- <string name="app_name">湘雅二医院</string> -->
+    <!-- <string name="registerHeader">注册湘雅二医院账号</string> -->
+    <!-- <string name="regist_select_notice_content">挂当天号：挂号成功后请直接携带诊疗卡到门诊就诊；\n\n预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号网取消成功后还需拨打医院电话0731&#8211;85294300取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+    <!-- <string name="regist_select_notice_content_regst">预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号取消成功后还需拨打医院电话0731&#8211;85294300取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+    <!-- <string name="ReportActivity">检查化验单查询</string> -->
+    <!-- <string name="PayInfoActivity">费用清单</string> -->
+    <!-- <string name="costTitle">费用清单</string> -->
+    <!-- <string name="checkTitle">检查化验</string> -->
+
+    <!-- 湘西州人民医院 -->
+    <!--     <string name="app_name">掌上州医院</string> -->
+    <!--     <string name="registerHeader">注册掌上湘西账号</string> -->
+    <!--     <string name="regist_select_notice_content">挂当天号：挂号成功后请直接携带诊疗卡到门诊就诊；\n\n预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号网取消成功后还需拨打医院电话0731&#8211;85294300取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+    <!--     <string name="regist_select_notice_content_regst">预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号取消成功后还需拨打医院电话0731&#8211;85294300取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+
+    <!-- 长沙市中心医院 -->
+    <!--     <string name="app_name">长沙市中心医院</string> -->
+    <!--      <string name="registerHeader">注册长沙市中心医院账号</string> -->
+    <!--      <string name="regist_select_notice_content">2、预约挂号支持不付费、预交金付费和支付宝付费三种方式。选择不付费方式，请于就诊时间前三十分钟到我院人工窗口或自助机取号后就诊；选择预交金付费或支付宝付费，请于就诊时间前三十分钟到门诊就诊。</string> -->
+    <!--     <string name="regist_select_notice_content_regst">1、挂当日号可用预交金或支付宝支付挂号费，请于就诊时间前三十分钟到门诊就诊。</string> -->
+
+    <!--     长沙市第一医院 -->
+    <!--     <string name="app_name">长沙市第一医院</string> -->
+    <!--     <string name="registerHeader">注册长沙市一医院账号</string> -->
+    <!--          <string name="regist_select_notice_content">挂当天号：挂号成功后请直接携带诊疗卡到门诊就诊；\n\n预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号网取消成功后还需拨打医院电话0731&#8211;84910087取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+    <!--     <string name="regist_select_notice_content_regst">预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号取消成功后还需拨打医院电话0731&#8211;85294300取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string>     -->
+
+    <!--      佛山市第五人民医院 -->
+    <!--     <string name="app_name">佛山市第五人民医院</string> -->
+    <!--     <string name="registerHeader">注册佛山市第五人民医院账号</string> -->
+    <!--          <string name="regist_select_notice_content">挂当天号：挂号成功后请直接携带诊疗卡到门诊就诊；\n\n预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号网取消成功后还需拨打医院电话0731&#8211;84910087取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+    <!--     <string name="regist_select_notice_content_regst">预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号取消成功后还需拨打医院电话0731&#8211;85294300取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string> -->
+
+    <!-- 邵阳市第一医院 -->
+    <string name="app_name">邵阳市第一人民医院</string>
+    <string name="registerHeader">注册邵阳市第一人民医院账号</string>
+    <string name="regist_select_notice_content">挂当天号：挂号成功后请直接携带诊疗卡到门诊就诊；\n\n预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号网取消成功后还需拨打医院电话0739&#8211;5011880取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string>
+    <string name="regist_select_notice_content_regst">预约挂号：预约成功后请于就诊当天，至少在就诊时间前30分钟到窗口或自助机取号。\n\n预约规则(可预约班次更新时间每日08：00更新)：\n1、取消订单请在就诊前1天16：00前，挂号取消成功后还需拨打医院电话0739&#8211;5011880取消；\n2、当月爽约3次将进黑名单，1个月内不能预约挂号。</string>
+
+    <string name="regist_select_inistruct_appoint">1.预约挂号已付费请于就诊时间前30分钟直接到诊区候诊。\n  2.预约挂号未付费请于就诊时间前30分钟到自助设备取号。\n  3.预约挂号已付费只能于就诊日前取消预约。</string>
+    <string name="regist_select_inistruct_regist">1.挂号前请先绑定诊疗卡。\n  2.直接挂号成功后请直接携带诊疗卡到诊区候诊。\n</string>
+
+
+    <!-- Hospital Common -->
+    <string name="common_loading">加载中...</string>
+
+    <string name="ReportActivity">化验单查询</string>
+    <string name="PayInfoActivity">门诊费用</string>
+    <string name="costTitle">门诊费用</string>
+    <string name="checkTitle">化验报告</string>
+
+
+    <string name="SplashActivity">Weclome!</string>
+    <string name="LoginActivity">用户登录</string>
+    <string name="progress_getting">正在加载数据&#8230;</string>
+    <string name="ReportDetailActivity">常规报告单</string>
+    <string name="system_setting">系统设置</string>
+
+
+    <string name="HomeActivity">首页</string>
+    <string name="DepartmentActivity">科室选择</string>
+    <string name="DoctorActivity">选医生</string>
+    <string name="RegisterConfirmActivity">预约确认</string>
+    <string name="RegisterConfirmActivity_Regist">挂号确认</string>
+    <string name="OrderInfoActivity">挂号详情</string>
+    <string name="PayDetailActivity">费用清单详情</string>
+    <string name="RegisterInfoActivity">挂号记录</string>
+    <string name="HosBindCardActivity">绑定诊疗卡</string>
+    <string name="HosPersonalInfoActivity">完善个人信息</string>
+    <string name="DepartmentIntroActivity">科室介绍</string>
+    <string name="DoctorIntroActivity">医生介绍</string>
+    <string name="RecordQueryActivity">记录查询</string>
+    <string name="RecipeActivity">处方记录</string>
+    <string name="RecipeDetailActivity">处方详情</string>
+    <string name="HosCardBindingActivity">诊疗卡绑定</string>
+    <string name="RegistrationSelectActivity">手机挂号</string>
+    <string name="MobileChargeActivity">预交金充值</string>
+    <string name="StayPayActivity">门诊待缴</string>
+    <string name="AppNameChangeActivity">修改app名字</string>
+    <string name="MobileBindFirstActiviy">绑定手机号</string>
+    <string name="MobileSettleActivity">结算</string>
+    <string name="BocSuccessActivity">结算完成</string>
+    <string name="BocWebActivity">银行付款</string>
+    <string name="MapNavSelectActivity">医院导航</string>
+    <string name="MapNavActivity">地图导航</string>
+    <string name="MapAroundActivity">周边商户</string>
+    <string name="HealthBaikeActivity">健康百科</string>
+    <string name="DiseaseLibraryActivity">疾病库</string>
+    <string name="DiseaseCommonActivity">常见疾病</string>
+    <string name="BodyPartListActivity">按部位查询</string>
+    <string name="DiseaseAlphaActivity">按拼音查询</string>
+    <string name="DiseaseDepartActivity">按科室查询</string>
+    <string name="DiseaseDetailsActivity">详细</string>
+    <string name="DrugClassifyActivity">药物分类</string>
+    <string name="DrugLibraryActivity">药物库</string>
+    <string name="ExternalPartner">支付结果</string>
+    <string name="DrugCommonActivity">常用药物</string>
+    <string name="DrugNoticeActivity">用药须知</string>
+    <string name="DrugResuceActivity">抢救药物</string>
+    <string name="DepartChildrenActivity">子科室</string>
+    <string name="TreatmentLibraryActivity">急救库</string>
+    <string name="TestLibraryActivity">化验单解读</string>
+    <string name="CheckReportActivity">检查报告查询</string>
+    <string name="DrugDetailActivity">药物详情</string>
+    <string name="DrugPropertyActivity">药物分类</string>
+    <string name="HospitalizationFeeActivity">住院费用</string>
+    <string name="OrderPayActivity">支付记录</string>
+    <string name="PriceQueryActivity">药价查询</string>
+    <string name="ECheckNavActivity">电子导诊</string>
+    <string name="FamilyExchangeActivity">切换家庭成员</string>
+    <string name="FamilyAddNewActivity">添加家庭成员</string>
+    <string name="FamilyModifyActivity">修改成员信息</string>
+    <string name="SymptomToDiseaseActivity">症状列表</string>
+
+    <!-- 3th party widget res -->
+    <string name="string_picker_dialog_values">STRING_PICKER_DIALOG_VALUES</string>
+    <string name="string_picker_dialog_title_values">STRING_PICKER_DIALOG_TITLE_VALUES</string>
+    <string name="string_picker_dialog_title">选择日期</string>
+    <string name="string_picker_dialog_ok">确定</string>
+    <string name="string_picker_dialog_cancel">取消</string>
+
+    <!-- Tab name -->
+    <!-- Convenient for medical treatment -->
+    <string name="main_tab_health_edu">健康资讯</string>
+    <string name="main_tab_person">个人中心</string>
+    <!-- Tab name -->
+
+    <string name="title_health_edu">健康知识</string>
+    <string name="title_aggrement">服务条款</string>
+
+    <!-- Setting -->
+    <string name="setting_personal_info">个人信息</string>
+    <string name="setting_mobile_modify">手机号更改</string>
+    <!-- Setting -->
+
+
+    <!-- Login -->
+    <string name="login">登录</string>
+    <string name="login_account_name">登陆名：</string>
+    <string name="login_password">密\u3000码：</string>
+    <string name="login_remember_pwd">记住密码</string>
+    <string name="login_register">注册</string>
+    <string name="login_login_failed">登陆失败，请检查手机号或密码！</string>
+    <string name="login_name">姓名：</string>
+    <string name="version_reserved">©All rights reserved.版本号2.0</string>
+
+    <string name="login_pwd_old">旧&#160;&#160;密&#160;&#160;码：</string>
+    <string name="login_pwd_new">新&#160;&#160;密&#160;&#160;码：</string>
+    <string name="login_pwd_new_confirm">密码确认：</string>
+    <string name="login_pwd_confirm_action">确认修改</string>
+    <!-- Login -->
+
+    <!-- PerfectionProfileActivity -->
+    <string name="profile_name">姓&#160;&#160;&#160;&#160;名：</string>
+    <string name="profile_telephone">手机号：</string>
+    <string name="profile_idcard">身份证：</string>
+    <string name="profile_confirm_action">完成修改</string>
+    <string name="profile_hint">请完善您的个人信息，方便更好的为您服务</string>
+    <!-- PerfectionProfileActivity -->
+
+    <!-- HealthEncyclopediaActivity -->
+    <string name="health_disease_dictionary">疾病字典</string>
+    <string name="health_drug_dictionary">药物字典</string>
+    <string name="health_first_aid">急救知识</string>
+    <string name="health_report_analysis">报告单解读</string>
+    <!-- HealthEncyclopediaActivity -->
+
+    <!-- Register -->
+    <string name="register_protocol_read">我已阅读并同意</string>
+    <string name="register_protocol_name">《服务条款》</string>
+    <string name="register_phone">请输入手机号码</string>
+    <string name="register_male">男</string>
+    <string name="register_female">女</string>
+    <string name="register_hint_phone">请输入您的手机号码</string>
+    <string name="register_hint_user_name">请输入用户名(至少6位)</string>
+    <string name="register_hint_password">请输入密码，6&#8211;16位</string>
+    <string name="register_hit_password_again">请再次输入密码</string>
+    <string name="register_hint_user_code">注册的用户名</string>
+    <string name="register_hint_validation_code">请输入验证码</string>
+    <string name="register_hint_nick_name">昵称</string>
+    <string name="register_hint_identification">身份证号</string>
+    <string name="register_hint_mail">邮箱</string>
+    <string name="register_hint_address">地址</string>
+    <string name="register_btn_birthday">出生日期</string>
+    <string name="register_btn_next">下一步</string>
+    <string name="register_protocols">我已阅读并同意《服务条款》</string>
+    <string name="register_protocols2">注册即视为同意《用户许可协议》</string>
+    <string name="register_phone_colon">您的手机号码：</string>
+    <string name="register_code_action">获取验证码</string>
+    <string name="register_confirm_action">注  册</string>
+    <string name="register_code">验&#160;&#160;证&#160;&#160;码：</string>
+    <string name="register_password">密 码：</string>
+    <string name="register_hide">隐藏</string>
+    <string name="register_name">姓 名：</string>
+    <string name="register_id">身份证：</string>
+    <string name="register_complete">完成</string>
+    <string name="register_num_has_sent">短信验证码已发送到</string>
+    <string name="register_next">下一步</string>
+    <!-- Register -->
+
+    <!-- Find password -->
+    <string name="register_telphone_num">请填写注册时的手机号码</string>
+    <string name="register_verification">验证</string>
+    <string name="label_forgot_password">忘记密码</string>
+    <!-- Find password -->
+
+    <!-- PersonalCenterV2Activity -->
+    <string name="personal_info">个人资料</string>
+    <!-- PersonalCenterV2Activity -->
+
+    <string name="error_mobile_format">手机号格式不正确</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_prompt">提示</string>
+    <string name="dialog_content_crash">程序崩溃了</string>
+    <string name="dialog_btn_iknow">我知道了</string>
+    <string name="dialog_content_loading">正在努力加载,请稍候&#8230;</string>
+    <string name="dialog_cofirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_card_valid">验证中，请稍后&#8230;</string>
+    <!-- Dialog -->
+
+
+    <!-- msg -->
+    <string name="msg_network_connected">网络已连接</string>
+    <string name="msg_network_disconnected">网络未连接，请检查网络设置!</string>
+    <string name="msg_service_interval_eror">服务器内部错误</string>
+    <string name="msg_service_disconnected">无法连接到服务器，请检查网络设置！</string>
+    <string name="msg_error_cannot_get_code_1">获取验证码失败，请检查网络设置，重新获取验证码!</string>
+    <string name="msg_error_cannot_get_code_2">获取验证码失败，重新获取验证码!</string>
+    <string name="msg_error_validation_code">验证码不正确</string>
+    <string name="msg_error_validation_expired">验证码已过期！</string>
+    <string name="msg_get_validate_code_first">请先获取验证码!</string>
+    <string name="msg_empty_validation_code">请输入验证码!</string>
+    <string name="msg_empty_phone">手机号码不能为空!</string>
+    <string name="msg_error_phone_registered">手机号码已注册!</string>
+    <string name="msg_error_phone">手机号不正确!</string>
+    <string name="msg_empty_nick_name">昵称不能为空!</string>
+    <string name="msg_empty_name">姓名不能为空!</string>
+    <string name="msg_empty_id_card">身份证号不能为空！</string>
+    <string name="msg_error_id_card">身份证号不正确！</string>
+    <string name="msg_empty_birth">请选择出生日期！</string>
+    <string name="msg_empty_card">卡号不能为空！</string>
+    <string name="msg_error_pwd_find_phone_validation">验证失败，请核对姓名和手机号！</string>
+    <string name="msg_loading_validate">验证中，请稍后&#8230;</string>
+    <string name="msg_error_common">程序异常，请稍后再试!</string>
+
+    <!-- msg -->
+
+
+    <!-- menu -->
+    <string name="menu_main_user">切换用户</string>
+    <string name="menu_main_settings">设置</string>
+    <string name="menu_main_help">帮助</string>
+    <string name="menu_main_feedback">意见反馈</string>
+    <!-- menu -->
+    <string name="activity_title_more">更多</string>
+
+    <!-- widgets -->
+    <string name="widgets_datetime_time_divider">：</string>
+    <!-- widgets -->
+
+
+    <string name="btn_retry">重试</string>
+    <string name="msg_success_register">注册成功！</string>
+    <string name="msg_loading_register">注册中，请稍后&#8230;</string>
+
+    <!-- Mobile Validate -->
+    <string name="mobile_old_hint">温馨提示：\n更换手机号码之前，需要核实原来的手机号。原来的手机号码是%1$s</string>
+    <string name="mobile_new">新的手机号是：%1$s</string>
+    <string name="msg_mobile_validation">正在验证，请稍后&#8230;</string>
+    <string name="msg_mobile_send">正在获取验证码&#8230;</string>
+    <string name="btn_get_code">发送验证码</string>
+    <string name="btn_get_block">(%1$ss)</string>
+    <!-- Mobile Validate -->
+    <!-- Personal Setting -->
+    <string name="personal_card_bind">已绑定</string>
+    <string name="personal_card_unbind">未绑定</string>
+    <!-- Personal Setting -->
+
+
+    <!-- Setting -->
+    <string name="setting_version_newest">当前已是最新版本！</string>
+
+    <!-- 卡 -->
+    <string name="card_type_select">请选择卡类型： </string>
+    <string name="validate">验证</string>
+    <string name="card_binding">卡绑定</string>
+    <string name="card_list">绑定列表</string>
+    <string name="card_unbind">解除卡绑定</string>
+    <string name="card_unbinding_hint">温馨提示：\n您当前要解除的卡号为<b>%1$s</b>，卡类型是<b>%2$s</b></string>
+    <string name="msg_error_unbind">解除绑定失败，请稍后再试!</string>
+    <string name="msg_success_unbind">解绑成功!</string>
+
+    <!-- 找回密码 -->
+    <!-- 注册时的用户名和 -->
+    <string name="hint_pwd_find_phone_note">温馨提示：\n请正确填写您注册时的手机号码。</string>
+    <string name="hint_pwd_find_phone">注册时的手机号</string>
+    <string name="hint_pwd_find_new_phone">请输入新密码（至少6位）</string>
+    <string name="hint_pwd_find_new_phone_again">请再次输入新密码</string>
+    <string name="btn_pwd_find_commit">提交</string>
+    <string name="app_update_file_name">文件名：%1$s</string>
+    <string name="app_update_version">版本号：%1$s</string>
+    <string name="app_update_time">更新时间：%1$s</string>
+    <string name="app_update_info">版本说明：\n%1$s</string>
+    <string name="app_update_title">版本更新</string>
+    <string name="msg_empty_password">密码不能为空!</string>
+    <string name="msg_error_pwd_not_same">两次输入的密码不相同!</string>
+    <string name="msg_hint_modifying">修改中，请稍后&#8230;</string>
+    <string name="msg_success_modifying">修改成功!</string>
+    <string name="msg_error_modifying">修改失败!</string>
+    <string name="title_pwd_find_phone_validate">信息验证</string>
+    <string name="title_pwd_find_pwd_new_set">设置新密码</string>
+    <string name="password_too_short">密码不能少于6位</string>
+    <!-- 找回密码 -->
+
+
+    <!-- 反馈 -->
+    <string name="feed_back_type">反馈类型</string>
+    <string name="feed_back_suggest">建议</string>
+    <string name="feed_back_complaint">投诉 </string>
+    <string name="feed_back_your_phone">您的电话</string>
+    <string name="feed_back_commiting">提交中&#8230;</string>
+    <string name="feed_back_success_committing">提交成功，感谢您的反馈，我们会努力改进的！</string>
+    <string name="title_about">关于</string>
+    <string name="hos_intro_name">长城医疗</string>
+    <string name="hos_intro_address">湖南省长沙市人民路139号</string>
+    <string name="hos_intro_title_road">【医院交通】</string>
+    <string name="hos_intro_road">途径医院交通路线：\n乘9路 101路 102路 105路 122路 142路 301路 348路 402路 406路 901路公交直达</string>
+    <string name="hos_intro_title_hospital_level">【医院等级】</string>
+    <string name="hos_intro_hospital_level">三级甲等</string>
+    <string name="hos_intro_title_feature">【特色科室】</string>
+    <string name="hos_intro_feature">神经外科</string>
+    <string name="hos_intro_title_website">【官方网站】</string>
+    <string name="hos_intro_website">http://www.xyeyy.com/</string>
+    <string name="hos_intro_title_telphone">【联系电话】</string>
+    <string name="hos_intro_telphone">0731&#8211;85294300</string>
+    <string name="hos_intro_introduction">【医院简介】</string>
+    <string name="hos_intro_indroduction_text">本医院是全国性三级甲等医院，具有博士1000位，病床3万张</string>
+    <string name="hos_select_province">选择省</string>
+    <string name="hos_select_city">选择市</string>
+    <string name="title_hos_select">医院选择</string>
+    <string name="no_data">暂无数据</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">失去连接</string>
+    <string name="msg_error_bluetooth_not_supported">不支持蓝牙.</string>
+
+    <string name="msg_dialog_commit">提交中,请稍后&#8230;</string>
+    <!-- 个人信息 单点医院 -->
+    <string name="hos_personal_commit">修改中&#8230;</string>
+    <string name="hos_personal_info">完善个人信息</string>
+    <string name="hos_personal_family">家庭成员管理</string>
+    <string name="hos_personal_bind">诊疗卡绑定</string>
+    <string name="hos_personal_check_report">检查报告查询</string>
+    <string name="hos_personal_outpatient_fee">门诊费用查询</string>
+    <string name="hos_personal_register_fee">预约挂号记录查询</string>
+    <string name="hos_personal_logout">注销登录</string>
+    <string name="hos_info_nick_name">昵\u3000\u3000称：</string>
+    <string name="hos_info_real_name">姓\u3000\u3000名：</string>
+    <string name="hos_info_id_card">身&#160;&#160;份&#160;&#160;证：</string>
+    <string name="hos_info_sex">性\u3000\u3000别：</string>
+    <string name="hos_info_birth">出生日期：</string>
+    <string name="hos_info_address">住\u3000\u3000址：</string>
+    <string name="hos_info_phone">手&#160;&#160;机&#160;&#160;号：</string>
+    <string name="host_info_pass_change">修改密码</string>
+    <string name="hos_info_modify">完成</string>
+    <string name="hos_info_change_mobile">更改手机号</string>
+    <string name="hos_bind_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：</string>
+    <string name="hos_bind_binded">已绑定卡号</string>
+    <string name="hos_bind_unbind">取消绑定</string>
+    <string name="hos_bind_binding">绑定卡号</string>
+    <string name="hos_bind_card_input">输入诊疗卡号输入身份证号或者诊疗卡</string>
+    <!-- 输入诊疗卡号 -->
+    <string name="hos_bind_empty_card">无绑定的卡号</string>
+    <string name="hos_bind_binding_info">绑定信息</string>
+    <string name="hos_bind_current_user">用户信息</string>
+    <string name="hos_bind_binding_card">准备绑定的卡号：</string>
+    <string name="hos_bind_binding_now">绑定</string>
+    <string name="hos_bind_status_1">此卡%s</string>
+    <string name="hos_bind_status_2">此卡发生%s</string>
+    <string name="msg_error_bind_name">卡号用户的姓名与当前用户不一致！</string>
+    <string name="msg_error_bind_id_card">卡号用户的身份证号与当前用户不一致！</string>
+    <string name="msg_error_card_no_id_card">诊疗卡无身份证信息，请更换诊疗卡！</string>
+
+    <!-- 预约挂号 -->
+    <string name="rgtSubscribe">预约挂号</string>
+    <string name="order_note">您确认要挂号吗？</string>
+    <string name="order_sure">确定</string>
+    <string name="order_cancel">取消</string>
+    <string name="reg_suc">挂号成功</string>
+    <string name="hospital_select">医院选择</string>
+    <string name="department_select">科室选择</string>
+    <string name="doctor_select">医生选择</string>
+
+    <!-- 预约记录 -->
+    <string name="reserved_rec_number">订单号 </string>
+    <string name="reserved_rec_info">预约信息： </string>
+    <string name="reserved_rec_status">订单状态： </string>
+    <string name="reserved_rec_cancel">取消预约</string>
+    <string name="reserved_rec_doctor_name">预约医生：</string>
+    <string name="reserved_rec_time">预约时间：</string>
+    <string name="reserved_rec_depart">预约科室：</string>
+    <string name="reserved_rec_pay_type">支付方式：</string>
+    <string name="regSourceName">号源名称：</string>
+
+    <!-- selfplatform -->
+    <string name="hospital_name">湘雅附二医院</string>
+    <string name="hospital_depart">医院科室</string>
+    <string name="detail_list">清单明细：</string>
+    <string name="addTreatCard">添加诊疗卡</string>
+    <string name="inputTreatCard">请输入诊疗卡卡号！</string>
+    <string name="staypay_detail">待缴费清单</string>
+    <string name="pay">支付</string>
+    <string name="category">类\u3000\u3000别：</string>
+    <string name="date">日\u3000\u3000期：</string>
+    <string name="doctor_belong">检查医生：</string>
+    <string name="medical_pay">总医疗费：</string>
+    <string name="seeTime">就诊时间</string>
+    <string name="prescribeName">处方名称：</string>
+    <string name="time_seedoctor">就诊时间：</string>
+    <string name="prompt">备注：如需打印发票请在当天补打，逾期不办！</string>
+    <string name="prompt_appoint">备注：只能于就诊日期之前取消预约，如需打印发票请在当天补打，逾期不办！</string>
+    <string name="repDeptName">检查科室：</string>
+    <string name="sendDeptName">送检科室：</string>
+    <string name="sendTime">送检时间：</string>
+    <string name="checkDoctName">审核医生：</string>
+    <string name="repTime">报告时间：</string>
+    <string name="reportStatus">报告状态：</string>
+    <string name="highLowFlag">高低标志：</string>
+
+    <!-- DoctorActivity -->
+    <string name="duty">医生级别：</string>
+    <string name="expertIn">擅长：</string>
+    <string name="forenoon">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="allday">全天</string>
+    <string name="doctor_all">全部</string>
+    <string name="foreWork">上午排班信息：</string>
+    <string name="afterWork">下午排班信息：</string>
+    <string name="msg_empty_no_appointment">没有可预约的日期</string>
+    <string name="text_empty_no_doctor_registered">没有可以挂号的医生信息</string>
+    <string name="text_empty_no_doctor">没有可预约的医生信息</string>
+
+    <!-- HomeActivity -->
+    <string name="registerTitle">挂号</string>
+    <string name="registerDes">可以挂一周之内的号源</string>
+    <string name="payTitle">预交金充值</string>
+    <string name="payDes">支持网联手机付费</string>
+    <string name="dptTitle">用户中心</string>
+    <string name="dptDes">用户信息设置以及帐号绑定</string>
+    <string name="title_hospital_intro">医院介绍</string>
+    <string name="hptDes">介绍医院科室、专科、专家</string>
+    <string name="hot">热</string>
+    <string name="mapTitle">地图导航</string>
+    <string name="outpatient_costs_query">费用查询</string>
+    <string name="check_assay_query">检验化验查询</string>
+    <string name="queue_query">排队查询</string>
+    <string name="guide_query">电子导诊单查询</string>
+    <string name="medical_card_charge">诊疗卡充值</string>
+
+    <!-- Encyclopedia of knowledge -->
+    <string name="KBTitle">健康百科</string>
+    <string name="checkReportTitle">检查报告</string>
+    <string name="queueTitle">排队候诊</string>
+    <string name="WaitingQueueDepartActivity">科室候诊列表</string>
+    <string name="SmartTreatActivity">智能分诊</string>
+    <string name="RichTextActivity">详细内容</string>
+    <string name="BodyAndSymptomActivity">症状选择</string>
+    <string name="empty"></string>
+    <!-- OrderInfoActivity -->
+    <string name="selfDctInfo">自助就医服务信息</string>
+    <string name="casebook">（#如需购买病历本，请到人工窗口购买#）</string>
+    <string name="orderStatus">订单状态：</string>
+    <string name="serialNumber">流&#160;&#160;水&#160;&#160;号：</string>
+    <string name="WaitTreatNo">候诊序号：</string>
+    <string name="personDct">就&#160;&#160;诊&#160;&#160;人：</string>
+    <string name="hospital">就诊医院：</string>
+    <string name="department">就诊科室：</string>
+    <string name="doctor">就诊医生：</string>
+    <string name="treatLocation">就诊位置：</string>
+    <string name="doctorRank">医生级别：</string>
+    <string name="rgtTime">就诊时间：</string>
+    <string name="payPattern">支付方式：</string>
+    <string name="subscribePay">总&#160;&#160;费&#160;&#160;用：</string>
+    <string name="cancelRgt">取消挂号</string>
+    <string name="msg_error_commit_failed">提交失败,请重新提交</string>
+
+    <!-- RegisterActivity -->
+    <string name="sex">性\u3000\u3000别：</string>
+    <string name="mobile">手&#160;&#160;机&#160;&#160;号：</string>
+    <string name="IDNumber">证&#160;&#160;件&#160;&#160;号：</string>
+    <string name="amount">总&#160;&#160;费&#160;&#160;用：</string>
+    <string name="offlinePay">预交金支付</string>
+    <string name="onlinePay">在线支付</string>
+    <string name="confirmRgt">确认挂号</string>
+    <string name="regInfo">挂号信息</string>
+    <string name="selectBind">账户信息</string>
+    <string name="cardMoney">卡内余额：</string>
+    <string name="dialog_loading_appointment_cancel">取消中，请稍后&#8230;</string>
+    <string name="msg_success_appointment_cancel">取消预约成功！</string>
+    <string name="msg_success_appointment_cancel_paid">取消预约成功，预约费已经成功退到您的诊疗卡中，请到我院人工窗口办理人工退款。</string>
+    <string name="msg_error_appointment_cancel">取消失败!</string>
+
+    <!-- HosCardOperationActivity -->
+    <string name="msg_error_max_one_card_limit">一次只能绑定一张卡！要绑定新卡，请先解除当前已绑定的诊疗卡</string>
+
+    <!-- reportActivity -->
+    <string name="referenceValue">参考值：</string>
+    <string name="reportQuery">化验单查询</string>
+    <string name="queryDetail">查看明细</string>
+    <string name="reportDetail">报告单详情</string>
+    <string name="identifyNumber">编\u3000\u3000号：</string>
+    <string name="definy">名\u3000\u3000称：</string>
+    <string name="definy_name">姓\u3000\u3000名：</string>
+    <string name="mpay">自费</string>
+    <string name="npay">农保</string>
+    <string name="hpay">医保</string>
+    <string name="otherpay">其他</string>
+    <string name="dateQuery">查询日期：</string>
+    <string name="reportName">报告单名称：</string>
+    <string name="normal">常规</string>
+    <string name="weishengwu">微生物</string>
+
+    <!-- reportDetailActivity -->
+    <string name="definition">项目名称：</string>
+    <string name="ration">定量结果：</string>
+    <string name="reference">参&#160;&#160;考&#160;&#160;值：</string>
+    <string name="determine">定性结果：</string>
+    <string name="result">最终结果：</string>
+    <string name="unit">项目单位：</string>
+    <string name="highLow">高低标识：</string>
+
+    <!-- DepartmentActivity -->
+    <string name="depart_select_title">选择科室</string>
+    <string name="depart_select_empty">没有获取到科室，请稍后再试！</string>
+
+    <!-- DepartmentIntroActivity -->
+    <string name="rgstExpert">专家挂号</string>
+    <string name="rgstCommon">普通挂号</string>
+    <string name="receipts">单据名称：</string>
+    <string name="reportTitle">化验单</string>
+    <string name="reportDetailTitle">化验单详情</string>
+    <string name="paytitle">费用单</string>
+    <string name="seeDctTitle">处方单</string>
+
+    <!-- DoctorActivity -->
+    <string name="doctorDateSelect">请选择挂号日期</string>
+    <string name="detail">详细信息</string>
+
+    <!-- DoctorIntroActivity -->
+    <string name="outPatientTime">门诊时间：</string>
+    <string name="rgstTime">就诊时间：</string>
+    <string name="outPatientAddress">门诊地址：</string>
+    <string name="remain">剩余号源：</string>
+    <string name="dataSp">挂号日期选择：</string>
+
+    <!-- RecipeActivity -->
+    <string name="recipeType">处方类别：</string>
+    <string name="recipeID">处方编码：</string>
+    <string name="recipeTime">开单时间：</string>
+    <string name="totalFee">金\u3000\u3000额：</string>
+    <string name="diagnosis">诊\u3000\u3000断：</string>
+    <string name="recipeQuery">费用清单查询</string>
+    <string name="recipeDept">开方科室：</string>
+    <string name="recipeDct">开方医生：</string>
+    <string name="payType">费用类型：</string>
+    <string name="payStatus">支付类型：</string>
+
+    <!-- RecipeDetailActivity -->
+    <string name="specs">规&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;格：</string>
+    <string name="recipeunit">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位：</string>
+    <string name="unitprice">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;价：</string>
+    <string name="quantity">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量：</string>
+    <string name="fee">费&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;用：</string>
+    <string name="recipename">名&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称：</string>
+    <string name="itemID">编&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码：</string>
+
+    <!-- PayActivity -->
+    <string name="feeID">单&#160;&#160;据&#160;&#160;号：</string>
+    <string name="pay_status">状&#160;&#160;态：</string>
+    <string name="busiType">业务类型：</string>
+    <string name="execDeptName">执行科室：</string>
+    <string name="itemfee">费用金额：</string>
+    <string name="feeDate">发生日期：</string>
+
+    <!-- PayDetailActivity -->
+    <string name="itemLocation">费用发生地：</string>
+    <string name="itemPrice">单价</string>
+    <string name="itemQuantity">数量</string>
+    <string name="itemUnit">单位</string>
+    <string name="itemfeeName">费用名称</string>
+    <string name="feepayDate">费用发生时间</string>
+
+    <!-- RegisterConfirmActivity -->
+    <string name="cardID">卡\u3000\u3000号：</string>
+    <string name="noDeptIntro">暂无科室介绍！</string>
+    <string name="confirmPay">确认支付</string>
+    <string name="moneyUnit">元</string>
+    <string name="all">所有</string>
+    <string name="oneMonth">一个月</string>
+    <string name="threeMonth">三个月</string>
+    <string name="sixMonth">半年</string>
+    <string name="settlePay">结算付款</string>
+    <string name="checkBtn">查看订单</string>
+
+    <!-- MobileChargeActivity -->
+    <string name="cardChargeTitle">诊疗卡充值</string>
+    <string name="cardChargeMessage">选择充值的诊疗卡</string>
+    <string name="cardNumber">请输入诊疗卡卡号</string>
+    <string name="mobile_charge">请输入充值金额</string>
+
+    <!-- StayPayActivity -->
+    <string name="chargeTitle">缴费</string>
+    <string name="chargeDes">用预交金缴费未支付账单</string>
+    <string name="chargeCard">卡号：</string>
+    <string name="RegisterInfoTitle">挂号记录</string>
+    <string name="RegisterInfoDes">查看当天挂号与预约挂号的记录</string>
+    <string name="HealthDes">了解健康教育的相关知识</string>
+    <string name="RegSourceID">号源编码：</string>
+    <string name="DeptName">科室名称：</string>
+    <string name="DoctName">医生姓名：</string>
+    <string name="TotalFee">总&#160;&#160;费&#160;&#160;用：</string>
+    <string name="RegDate">就诊日期：</string>
+    <string name="RegisterArea">挂号区域：</string>
+    <string name="RecipeType">处方类别：</string>
+    <string name="RecipeID">处方编码：</string>
+    <string name="RecipeTime">开单时间：</string>
+    <string name="PayFlag">支付标识：</string>
+    <string name="Diagnosis">诊断：</string>
+    <string name="NoRecipe">无处方记录！</string>
+    <string name="No_month_ago_pay">没有查询到一个月前支付数据！</string>
+    <string name="No_month_list_pay">没有查询到近一个月支付数据！</string>
+    <string name="NoRecipeDetail">无数据！</string>
+    <!-- 没有查询到此处方详情！ -->
+
+    <!-- RegistrationSelectActivity -->
+    <string name="regist_select_notice">挂号须知</string>
+    <string name="regist_select_regist">挂当天号</string>
+    <string name="regist_select_appointment">预约挂号</string>
+
+
+    <!-- PaymentActivity -->
+    <string name="payment_title">未缴费清单</string>
+    <string name="msg_empty_payment">没有需要缴费的记录!</string>
+    <string name="msg_empty_no_report">没有查询到化验单数据！</string>
+    <string name="msg_empty_no_payment_record">没有费用记录</string>
+    <string name="msg_error_regist_data">本科室暂时不能挂号!</string>
+    <string name="msg_error_appoint_data">本科室暂无预约！</string>
+    <string name="msg_empty_no_card">尚未绑定卡号,请先绑定诊疗卡！</string>
+    <string name="msg_empty_no_staypay">没有待缴费清单！</string>
+    <string name="msg_success_appoint">预约成功</string>
+    <string name="date_select_start">开始时间</string>
+    <string name="date_select_end">结束时间</string>
+    <string name="date_select_divider">" - "</string>
+    <string name="msg_empty_no_patient">没有获取到患者信息</string>
+    <string name="xyfe_card_input">医院诊疗卡</string>
+    <string name="no_card_input">没有绑定诊疗卡，请输入诊疗卡卡号或者绑定诊疗卡！</string>
+    <string name="no_money_input">没有输入充值金额，请输入充值金额或者选择充值金额！</string>
+    <string name="dialog_loading_appointment_get">正在获取预约时间&#8230;</string>
+    <string name="msg_no_record">没有记录！</string>
+    <string name="msg_no_introduction">暂无简介</string>
+    <string name="btn_refresh">刷新</string>
+    <!-- 1:科室，2：医生名字，3：医生职称，4：就诊序号，5：等候人数，6：就诊位置 -->
+    <string name="msg_text_waiting_queue"><b>您在</b> %1$s %2$s 处的<a>就诊序号为</a>%3$s，前面有<h1>%4$s人未就诊，请到%5$s候诊</h1></string>
+    <string name="sucess_action_delete">删除成功！</string>
+    <string name="dialog_loading_operation">操作中，请稍后&#8230;</string>
+    <string name="receipePay">确定缴费</string>
+    <string name="msg_failed_delete">删除失败，请稍后再试!</string>
+    <string name="text_current_family_member">当前用户为：%1$s</string>
+    <string name="medical_card">诊疗卡号：</string>
+    <string name="msg_error_add">添加失败，请稍后再试！</string>
+    <string name="msg_success_added">添加成功！</string>
+    <string name="report_status_hint"><Data><![CDATA[ 注：<b><font color="#ff0000">↑</font></b>偏高<b><font color="#ff0000">↓</font></b> 偏低<font color="#ff0000"> + </font></b>阳性<b><font color="#ff0000"> - </font></b>阴性，无状态为正常]]></Data></string>
+    <string name="notice">注\u3000\u3000意：</string>
+    <string name="msg_empty_no_recipe">没有查询到处方记录！</string>
+    <string name="nonPay">未支付</string>
+
+    <!-- 取消预约 -->
+    <string name="phor_qx_np">取消预约成功......</string>
+    <string name="phor_qx_ri">取消预约成功，，系统正在将资金退回到您的诊疗卡中.......</string>
+    <string name="phor_qx_rp">取消预约成功，挂号费已退回您的诊疗卡中，请到我院人工窗口办理预交金退款.......</string>
+    <string name="phor_qx_rf">取消预约失败，请重试......</string>
+
+    <string name="phor_regist_10xx">已付款，正在挂号</string>
+    <string name="phor_regist_110x">正在挂号</string>
+    <string name="phor_regist_111x">挂号成功</string>
+    <string name="phor_regist_112x">挂号失败，挂号费已经退到您的诊疗卡中，请用预交金支付重新挂号或者到我院人工窗口办理预交金退款。</string>
+    <string name="phor_regist_113x">挂号失败，请用预交金支付重试。</string>
+    <string name="phor_regist_1xxx">挂号失败，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+
+    <string name="phor_appoint_10xx">已付款，正在预约挂号</string>
+    <string name="phor_appoint_110x">正在预约挂号</string>
+    <string name="phor_appoint_111x">预约挂号成功</string>
+    <string name="phor_appoint_112x">预约挂号失败，挂号费已经退到您的诊疗卡中，请用预交金支付重新预约挂号或者到我院人工窗口办理预交金退款。</string>
+    <string name="phor_appoint_113x">预约挂号失败，请用预交金支付重试。</string>
+    <string name="phor_appoint_1200">预约挂号失败，系统正将资金退回到您的支付宝账户中&#8230;</string>
+    <string name="phor_appoint_1201">预约挂号失败，系统已将资金退回到您的支付宝账户中&#8230;</string>
+    <string name="phor_appoint_120x">预约挂号失败，系统无法将资金退回到您的支付宝账户中，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+    <string name="phor_appoint_13xx">预约挂号失败，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+
+    <string name="phor_appoint_100x">已付款，正在预约挂号</string>
+    <string name="phor_appoint_1220">e预约挂号失败，系统正将资金退回到您的支付宝账户中&#8230;</string>
+    <string name="phor_appoint_1221">预约挂号失败，系统提交退款成功，正在处理&#8230;</string>
+    <string name="phor_appoint_1222">预约挂号失败，系统无法将资金退回到您的支付宝账户中，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+    <string name="phor_appoint_1224">预约挂号失败,系统已将资金退回到您的支付宝账户中&#8230;</string>
+    <string name="phor_appoint_133x">预约挂号失败，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+
+    <string name="phor_payment_10xx">已付款，正在缴费</string>
+    <string name="phor_payment_110x">正在缴费</string>
+    <string name="phor_payment_111x">缴费成功</string>
+    <string name="phor_payment_112x">缴费失败，缴费金额已经退到您的诊疗卡中，请用预交金支付重新缴费。</string>
+    <!-- 或者到我院人工窗口办理预交金退款。 -->
+    <string name="phor_payment_113x">缴费失败，请用预交金支付重试。</string>
+    <string name="phor_payment_1xxx">缴费失败，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+
+    <string name="phor_recharge_10">正在充值</string>
+    <string name="phor_recharge_11">充值成功</string>
+    <string name="phor_recharge_1x">充值失败，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+
+    <string name="phor_refound_1">取消挂号成功,正将资金退回到您的支付宝中</string>
+    <string name="phor_refound_4">取消挂号成功,系统已将资金退回到您的支付宝账户中</string>
+    <string name="phor_refound_5">取消挂号成功,系统无法将资金退回到您的支付宝账户中，请在三个工作日后携带身份证及诊疗卡到我院财务科退费。</string>
+
+    <string name="font_size">字体大小</string>
+
+    <string name="register_confirm_hint_pay">*温馨提示：直接候诊。</string>
+    <string name="register_confirm_hint_noPay">*温馨提示：自助机排队取号再候诊。</string>
+
+
+    <!-- New UI -->
+    <string name="doct_specify">特\u3000\u3000长：</string>
+    <string name="card_no">卡\u3000\u3000号：</string>
+    <string name="label_medical_card">诊疗卡号：</string>
+    <string name="param_label_family_member">家庭成员：%s</string>
+    <string name="serialNo">流&#160;&#160;水&#160;&#160;号：</string>
+    <string name="reg_fee">挂&#160;&#160;号&#160;&#160;费：</string>
+    <string name="material_fee">材&#160;&#160;料&#160;&#160;费：</string>
+    <string name="label_discount">免费金额：</string>
+    <string name="label_payable_fee">应缴金额：</string>
+    <string name="label_patient">就&#160;&#160;诊&#160;&#160;人：</string>
+    <string name="label_depart">科\u3000\u3000室：</string>
+    <string name="label_doctor">医\u3000\u3000生：</string>
+    <string name="alipay_pay">支付宝支付</string>
+    <string name="uinonpay">银联支付</string>
+    <string name="regist_error_text">\u3000\u3000Sorry,本次挂号失败，可能是您的网络连接不稳定造成的，请点击“重新挂号”按钮重新挂号。</string>
+    <string name="retry_regist">重新挂号</string>
+    <string name="register_success_msg">\u3000\u3000尊敬的%1$s用户：您好！您已挂号成功，请于%2$s携带您的诊疗卡到我院%3$s就诊。</string>
+    <string name="label_balance">卡内余额：</string>
+    <string name="label_card">诊疗卡号：</string>
+    <string name="label_regist_password">取号密码：</string>
+    <string name="label_look_position">就诊地点：</string>
+    <string name="label_look_time">就诊时间：</string>
+    <string name="hosp_card_bind_validate_note_message">注：验证码将发送到您在院内登记的手机号码中</string>
+    <string name="registration_query">挂号记录查询</string>
+    <string name="other_months">其他月份</string>
+    <string name="recent_mont">最近一个月</string>
+    <string name="recent_week">最近一周</string>
+    <string name="label_doctor_2">就诊医生：</string>
+    <string name="label_reg_fee">挂号费用：</string>
+    <string name="cancel_appoint">取消预约</string>
+    <string name="total_fee_need_pay">需缴纳总费用：</string>
+    <string name="label_hospital">就诊医院：</string>
+
+    <!-- CostsQueryActivity -->
+    <string name="label_costs_details">费用明细</string>
+    <string name="label_payment_colon">已缴费：</string>
+    <string name="label_yuan_period">元</string>
+    <string name="label_doctor_colon">医生：</string>
+    <string name="label_executive_location_colon">执行地点：</string>
+    <string name="no_cost_record">Sorry,还没有查询到这段时间内您的门诊费用信息，请重新制定查询日期。</string>
+
+    <!-- CostsQueryDetailActivity -->
+    <string name="label_outpatient_costs">门诊费用明细</string>
+    <string name="label_hospital_costs">住院费用明细</string>
+
+    <string name="label_patient_name_colon">患者名字：</string>
+    <string name="label_prescribing_sections_colon">开方科室：</string>
+    <string name="label_executive_departments_colon">执行科室：</string>
+    <string name="label_doctors_prescribing_colon">开方医生：</string>
+    <string name="label_prescribing_time_colon">开方时间：</string>
+    <string name="label_medical_card_colon">诊疗卡号：</string>
+    <string name="label_prescription_amount_colon">处方金额：</string>
+
+    <string name="label_hospital_number_colon">住院号：</string>
+    <string name="label_hospital_departments_colon">住院科室：</string>
+    <string name="label_doctors_bed_mrg_colon">管床医生：</string>
+    <string name="label_day_amount_colon">当日金额：</string>
+
+    <string name="label_project_name">项目名称</string>
+    <string name="label_number">数量</string>
+    <string name="label_money">金额</string>
+    <string name="label_unit">单位</string>
+    <string name="label_medicare_proportion">医保比例</string>
+    <string name="label_specification_colon">规格：</string>
+    <string name="label_unit_colon">单位：</string>
+
+    <!-- AssayQueryActivity -->
+    <string name="label_assay_details">化验报告单查询</string>
+
+    <string name="label_send_department_colon">送检科室：</string>
+    <string name="label_project_name_colon">项目名称：</string>
+    <string name="label_assay_time_colon">报告时间：</string>
+    <string name="label_assay_departments_colon">检验科室：</string>
+    <string name="label_assay_doctor_colon">检验医生：</string>
+
+    <string name="label_assay_desp">检查描述</string>
+    <string name="label_assay_result">检查结果</string>
+
+    <!-- InspectionQueryActivity -->
+    <string name="label_inspection_details"> 检查报告单查询</string>
+    <string name="no_inspection_record">Sorry,还没有查询到这段时间内您的检查报告信息，请耐心等候或重新查询。</string>
+
+    <!-- AssayQueryDetailCommActivity -->
+    <string name="label_assay_details_comm">检验报告单（常规）</string>
+    <string name="label_sample_colon">标本：</string>
+    <string name="label_reference">参考值</string>
+    <string name="label_result_value">结果值</string>
+    <string name="no_assay_record">Sorry,还没有查询到这段时间内您的检验报告信息，请耐心等候或重新查询。</string>
+
+    <!-- AssayQueryDetailMicoActivity -->
+    <string name="label_assay_details_mico">检验报告单（微生物）</string>
+    <string name="label_bacterial_name">细菌名称</string>
+    <string name="label_antibiotics_name">抗生素\n&#160;&#160;名称</string>
+    <string name="label_susceptibility_result">药敏\n结果</string>
+    <string name="label_num_value">数值\n结果</string>
+    <string name="label_bacterial_num">菌落\n计数</string>
+
+    <!-- QueueQueryActivity -->
+    <string name="label_queue_query">排队查询</string>
+    <string name="label_my_queue">我的队列</string>
+    <string name="label_queue_empty">\u3000\u3000目前没有查询到您的排队信息！系统仅支持挂号排队和取药排队信息查询。</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_section_queue">查询科室候诊信息</string>
+
+    <!-- GuideQueryActivity -->
+    <string name="label_guide_query">电子导诊单查询</string>
+    <string name="label_register_num_colon">挂号流水号：</string>
+    <string name="label_executed">已执行</string>
+    <string name="label_receipt_num_colon">单据号：</string>
+    <string name="label_total_cost_colon">总费用：</string>
+    <string name="label_payment_time_colon">缴费时间：</string>
+
+    <!-- HomeActivity -->
+    <string name="label_welcome"> ，欢迎您!</string>
+    <string name="label_login"> 登录/注册</string>
+
+
+<!--    <string name="label_number_password">取号密码：</string>-->
+    <string name="title_personal_center">用户中心</string>
+
+    <!-- PriceQueryActivity -->
+    <string name="label_select_type">选择类型：</string>
+
+
+    <!-- ParkingCarActivity -->
+    <string name="label_parking_car">快速停车</string>
+
+    <!--AlipayFakeActivity -->
+    <string name="label_input_x">*</string>
+
+    <string name="label_number_password">取号密码：</string>
+    <string name="regist">挂号</string>
+    <string name="order_regist">预约挂号</string>
+    <string name="title_activity_recipe_detail">门诊费用清单</string>
+    <!--OutpatientChargesActivity-->
+    <string name="no_outpaient_charge_list">Sorry,目前没有需要缴纳的费用，需先找医生开单后才能进行缴费操作。</string>
+
+
+</resources>

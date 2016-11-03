@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 四类字体大小 -->
+    <dimen name="micro_text_size">12sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="small_middle_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="xlarge_text_size">36sp</dimen>
+    <!-- 四类字体大小 -->
+
+    <!-- 组件 -->
+    <dimen name="android_width_small">16dp</dimen>
+    <dimen name="android_width_normal">32dp</dimen>
+    <dimen name="android_width_middle">48dp</dimen>
+    <dimen name="android_height_small">16dp</dimen>
+    <dimen name="android_height_big">60dp</dimen>
+    <dimen name="android_height_middle">48dp</dimen>
+    <dimen name="android_height_middle_2">48dp</dimen>
+    <dimen name="android_height_normal">32dp</dimen>
+    <dimen name="android_margin__big">48dp</dimen>
+    <dimen name="android_margin_middle">16dp</dimen>
+    <dimen name="android_margin_normal">8dp</dimen>
+    <dimen name="android_margin_micro">4dp</dimen>
+    <dimen name="android_margin_nano">2dp</dimen>
+    <dimen name="android_pading_big">32dp</dimen>
+    <dimen name="android_pading_middle_big">24dp</dimen>
+    <dimen name="android_padding_middle">16dp</dimen>
+    <dimen name="android_padding_normal">8dp</dimen>
+    <dimen name="android_padding_micro">4dp</dimen>
+    <dimen name="android_padding_nano">2dp</dimen>
+    <dimen name="android_stroke_width_middle">1dp</dimen>
+    <dimen name="android_stroke_width_normal">1px</dimen>
+    <dimen name="android_radiu_middle">4dp</dimen>
+    <dimen name="android_radiu_normal">2dp</dimen>
+    <dimen name="android_divider_height_normal">1dp</dimen>
+    <dimen name="android_divider_height_micro">1px</dimen>
+    <!-- 组件 -->
+
+    <dimen name="cmt_ad_height">150dp</dimen>
+    <dimen name="family_list_item_next">40dp</dimen>
+    <dimen name="bp_collect_bar_width">25dp</dimen>
+    <dimen name="bp_result_value_width_min">100dp</dimen>
+
+    <dimen name="bp_collect_btn_margin">25dp</dimen>
+    <dimen name="bp_collect_btn_size">120dp</dimen>
+
+    <dimen name="bp_result_refrence_color">200dp</dimen>
+    <dimen name="bp_collect_hint_height">145dp</dimen>
+
+    <!-- 预约挂号 -->
+    <!-- 预约挂号 -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="textview_padding_left">5dp</dimen>
+    <dimen name="layout_margin">5dp</dimen>
+    <dimen name="edit_height">40dip</dimen>
+
+    <dimen name="textSize">16sp</dimen>
+
+    <dimen name="spacing">5dp</dimen>
+
+    <dimen name="validate_code_margin_left">-12dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- CostsQueryDetailActivity -->
+    <dimen name="cqd_box_item_height">40dp</dimen>
+    <dimen name="cqd_icon_pading_left">20dp</dimen>
+
+    <!-- Cardview 兼容5.0 -->
+    <dimen name="card_margin">0dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+
+    <dimen name="size0">0dp</dimen>
+    <dimen name="size1">1dp</dimen>
+    <dimen name="size2">2dp</dimen>
+    <dimen name="size8">8dp</dimen>
+    <dimen name="size10">10dp</dimen>
+    <dimen name="size12">12dp</dimen>
+    <dimen name="size16">16dp</dimen>
+    <dimen name="size32">32dp</dimen>
+    <dimen name="size48">48dp</dimen>
+    <dimen name="size80">80dp</dimen>
+    <dimen name="size100">100dp</dimen>
+    <dimen name="size120">120dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

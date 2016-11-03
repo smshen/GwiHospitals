@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_800"
+        android:background="@color/tab_background_primary"
+        android:padding="@dimen/android_padding_normal"
+        android:text="@string/regist_error_text"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/android_margin__big"
+        android:layout_marginRight="@dimen/android_margin__big"
+        android:layout_gravity="center"
+        android:src="@drawable/regist_retry"/>
+
+    <Button
+        android:id="@+id/regist_error_retry"
+        android:layout_marginLeft="@dimen/android_margin_normal"
+        android:layout_marginRight="@dimen/android_margin_normal"
+        android:layout_marginBottom="@dimen/android_margin_middle"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_primary"
+        android:textColor="@color/white"
+        android:text="@string/retry_regist"/>
+</FrameLayout>

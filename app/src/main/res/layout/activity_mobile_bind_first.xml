@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <!--    <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/mobile_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/android_padding_normal"
+            android:background="@drawable/bg_corner_gray"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:padding="@dimen/android_padding_micro"
+            android:singleLine="true"
+            android:textColor="@color/text_gray_depart_item" />
+
+        <include layout="@layout/include_validate_code" />
+
+        <Button
+            android:id="@+id/mobile_bind_first_commt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/android_margin_middle"
+            android:background="@drawable/selector_btn_primary"
+            android:padding="@dimen/android_padding_micro"
+            android:text="提交"
+            android:textColor="@color/white" />-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/android_margin_normal">
+
+        <TableRow
+            android:paddingLeft="@dimen/android_padding_normal"
+            android:paddingRight="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_phone_colon" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/mobile_bind_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="phone"
+                android:padding="@dimen/android_padding_micro"
+                android:singleLine="true" />
+        </TableRow>
+
+        <View
+            style="@style/DividerSytle.Normal"
+            android:layout_marginTop="@dimen/android_margin_normal" />
+    </TableLayout>
+
+    <include layout="@layout/include_validate_code" />
+
+    <View
+        style="@style/DividerSytle.Normal"
+        android:layout_marginTop="@dimen/android_margin_normal" />
+
+    <Button
+        android:id="@+id/mobile_bind_first_commt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_middle"
+        android:background="@drawable/selector_btn_primary"
+        android:padding="@dimen/android_padding_micro"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

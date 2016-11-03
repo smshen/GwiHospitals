@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:background="@drawable/shape_corner_border">
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_patient"
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/outpatient_charge_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="张三"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_hospital"
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/outpatient_charge_list_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="长沙市中心医院"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_card"
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/outpatient_charge_list_card_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="20150824001"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="卡内余额："
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/outpatient_charge_list_card_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="100元"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+    </TableLayout>
+
+    <cz.kinst.jakub.view.StatefulLayout
+        android:id="@+id/outpatient_charge_stateful_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/outpatient_charge_recipe_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/android_margin_normal" />
+    </cz.kinst.jakub.view.StatefulLayout>
+
+    <Button
+        android:id="@+id/outpatient_charge_list_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:background="@drawable/selector_btn_primary"
+        android:text="确认信息"
+        android:textColor="@color/white" />
+</LinearLayout>

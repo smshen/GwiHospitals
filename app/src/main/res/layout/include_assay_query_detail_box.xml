@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CostsQueryDetailBox"
+    android:orientation="vertical">
+
+    <!-- ROW1 -->
+    <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_patient_name_colon" />
+
+        <TextView
+            android:id="@+id/patient_name"
+            style="@style/CostsQueryDetailBoxTextR" />
+
+        <View style="@style/CostsQueryDetailDividerSytle" />
+    </RelativeLayout>
+
+    <!-- ROW2 -->
+    <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_send_department_colon" />
+
+        <TextView
+            android:id="@+id/send_department"
+            style="@style/CostsQueryDetailBoxTextR" />
+
+        <View style="@style/CostsQueryDetailDividerSytle" />
+    </RelativeLayout>
+
+    <!-- ROW3 -->
+    <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_project_name_colon" />
+
+        <TextView
+            android:id="@+id/project_name"
+            style="@style/CostsQueryDetailBoxTextR" />
+
+        <View style="@style/CostsQueryDetailDividerSytle" />
+    </RelativeLayout>
+
+    <!-- ROW3 -->
+    <RelativeLayout
+        android:id="@+id/ly_sample"
+        style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_sample_colon" />
+
+        <TextView
+            android:id="@+id/sample"
+            style="@style/CostsQueryDetailBoxTextR" />
+
+        <View style="@style/CostsQueryDetailDividerSytle" />
+    </RelativeLayout>
+
+    <!-- ROW4 -->
+    <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_assay_time_colon" />
+
+        <TextView
+            android:id="@+id/assay_time"
+            style="@style/CostsQueryDetailBoxTextR" />
+
+        <View style="@style/CostsQueryDetailDividerSytle" />
+    </RelativeLayout>
+
+    <!-- ROW5 -->
+    <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_assay_departments_colon" />
+
+        <TextView
+            android:id="@+id/assay_departments"
+            style="@style/CostsQueryDetailBoxTextR" />
+
+        <View style="@style/CostsQueryDetailDividerSytle" />
+    </RelativeLayout>
+
+    <!-- ROW6 -->
+    <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+        <TextView
+            style="@style/CostsQueryDetailBoxTextL"
+            android:text="@string/label_assay_doctor_colon" />
+
+        <TextView
+            android:id="@+id/assay_doctor"
+            style="@style/CostsQueryDetailBoxTextR" />
+    </RelativeLayout>
+</LinearLayout>
+

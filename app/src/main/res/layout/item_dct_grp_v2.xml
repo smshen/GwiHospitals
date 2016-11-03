@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grey_300"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/dct_grp_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:layout_marginBottom="@dimen/android_margin_normal"
+        android:layout_marginLeft="@dimen/android_margin_normal"
+        android:src="@drawable/male_doctor"/>
+    <LinearLayout
+        android:layout_toRightOf="@id/dct_grp_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/android_padding_middle"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dct_grp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray_depart_item"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="王一佳"/>
+        <TextView
+            android:id="@+id/dct_grp_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/android_padding_normal"
+            android:textColor="@color/text_gray_depart_item"
+            android:text="主任医师"/>
+    </LinearLayout>
+</RelativeLayout>

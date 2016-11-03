@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gwi.phr.hospital"
+    android:installLocation="auto">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- 在SD卡中创建和删除文件权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <!-- 系统级窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <!-- SMS message -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 向SD卡中写入东西权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Baidu Map -->
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- Bluetooth BLE for android 4.3 or above -->
+    <!--    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />-->
+
+    <!--高德地图 start-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <!--高德地图 end-->
+
+    <!-- <instrumentation -->
+    <!-- android:name="android.test.InstrumentationTestRunner" -->
+    <!-- android:label="Testing" -->
+    <!-- android:targetPackage="com.gwi.selfplaftorm" /> -->
+    <application
+        android:name="com.gwi.selfplatform.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="android.test.runner" />
+
+        <receiver
+            android:name="com.gwi.selfplatform.ui.receiver.TokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.gwi.phr.TOKEN_EXPIRED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.first.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gwi.selfplatform.ui.base.WebActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.start.HomeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.RegistrationSelectV2Activity"
+            android:exported="false"
+            android:label="@string/RegistrationSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.module.pay.zhifubao.ExternalPartner"
+            android:exported="false"
+            android:label="@string/ExternalPartner"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.SubHosSelectActivity"
+            android:exported="false"
+            android:label="选择分院"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.RegistCategoryActivity"
+            android:exported="false"
+            android:label="选择挂号类别"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.DeptsSelectActivity"
+            android:exported="false"
+            android:label="挂号"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.DoctorSelectActivity"
+            android:exported="false"
+            android:label="选择医生"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.HospSourceSelectActivity"
+            android:exported="false"
+            android:label="选择号源"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.RegistConfirmV2Activity"
+            android:exported="false"
+            android:label="挂号确认"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.RegistCompleteActivity"
+            android:exported="false"
+            android:label="挂号成功"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.RegistQueryActivity"
+            android:exported="false"
+            android:label="@string/registration_query"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.RegisterQueryDetailActivity"
+            android:exported="false"
+            android:label="@string/registration_query"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.start.RegisterActivity"
+            android:exported="false"
+            android:label="@string/login_register"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.WaitingQueueDepartActivity"
+            android:exported="false"
+            android:label="@string/WaitingQueueDepartActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.InspectionQueryActivity"
+            android:exported="false"
+            android:label="@string/CheckReportActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.AssayQueryActivity"
+            android:exported="false"
+            android:label="@string/ReportActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- wechat sdk begin -->
+<!--        <activity
+            android:name="com.gwi.phr.xtszxyy.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />-->
+
+        <activity
+            android:name="com.gwi.selfplatform.module.pay.wechat.WXPayActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!-- wechat sdk end -->
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.gwi.selfplatform.module.pay.zhifubao.AliPayActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!-- alipay sdk begin -->
+
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.CostsQueryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.CostsQueryDetailActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.InspectionQueryDetailActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.AssayQueryDetailCommActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.AssayQueryDetailMicoActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.GuideQueryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.query.QueueQueryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.expand.ParkingCarActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.expand.OnlinePharmacyActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.PasswordModifiyActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.start.RegisterInfoActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.start.RegisterInputActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.start.SetNewPasswordActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.start.SetNewPasswordV2Activity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.start.PwdFindPhoneActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.start.RegisterV3Activity" />
+
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.HealthEncyclopediaActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DiseaseLibraryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.BodyPartListActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.BodyPartListV2Activity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DepartChildrenActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DiseaseAlphaActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DiseaseCommonActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DiseaseDepartActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DiseaseDetailsActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DrugDetailActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DrugLibraryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DrugPropertyActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DrugResuceActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.DrugClassifyActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TreatmentDetailsActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TreatmentLibraryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TreatmentListActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TestCheckDetailsActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TestKindChildActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TestLibraryActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.encyclopedia.TestListActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.SystemSettingsActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.PerfectionProfileActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.HosPersonalInfoActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.MobileBindFirstActiviy" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.MobileModifyActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.SettingActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.FeedBackActivity" />
+        <activity android:name="com.gwi.selfplatform.ui.activity.user.AboutActivity" />
+        <!-- bug2169 LiuTao 20160802 -->
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.pay.OutpatientChargesActivity"
+            android:label="@string/payment_title"
+            />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.start.LoginV2Activity"
+            android:exported="false"
+            android:label="@string/login"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.start.PasswordForgotV2Activity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.start.RegisterV2Activity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.HospitalIntroductionV2Activity"
+            android:exported="false"
+            android:label="@string/title_hospital_intro"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.user.PersonalCenterV2Activity"
+            android:exported="false"
+            android:label="@string/title_personal_center"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.user.MyMedicalCardActivity"
+            android:exported="false"
+            android:label="我的诊疗卡"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.user.MedicalCardAddActivity"
+            android:exported="false"
+            android:label="添加诊疗卡"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.pay.MedicalCardChargeActivity"
+            android:exported="false"
+            android:label="添加诊疗卡"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.expand.MapNavActivity"
+            android:exported="false"
+            android:label="@string/MapNavActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.expand.MapAroundActivity"
+            android:exported="false"
+            android:label="@string/MapAroundActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.registration.DepartAlphabetActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.nav.SmartTreatActivity"
+            android:exported="false"
+            android:label="@string/SmartTreatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.nav.SymptomToDiseaseActivity"
+            android:exported="false"
+            android:label="@string/SmartTreatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.nav.BodyAndSymptomActivity"
+            android:exported="false"
+            android:label="@string/SmartTreatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.expand.HealthEduActivity"
+            android:exported="false"
+            android:label="@string/main_tab_health_edu"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.PayRecordActivity"
+            android:exported="false"
+            android:label="@string/OrderPayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.pay.RecipeDetailActivity"
+            android:label="@string/title_activity_recipe_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.HospInfoQueryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.query.HospInfoDetailActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!--高德地图 start-->
+        <activity
+            android:name="com.gwi.selfplatform.ui.activity.expand.IndoorNavActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.daxi.navi.NaviActivity"
+            android:label="@string/app_name" />
+        <!--高德地图 end-->
+    </application>
+
+</manifest>

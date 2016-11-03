@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">湘潭市中心医院</string>
+    <string name="registerHeader">注册湘潭市中心医院账号</string>
+
+    <string name="regist_select_notice_content">  1.挂号前请先绑定诊疗卡。\n\n  2.直接挂号成功后请直接携带诊疗卡到诊区候诊。\n\n  3.预约挂号已付费请于就诊时间前30分钟直接到诊区候诊。\n  4.预约挂号未付费请于就诊时间前30分钟到自助设备取号。\n\n  5.预约挂号已付费只能于就诊日前取消预约。</string>
+    <string name="regist_select_notice_content_regst">1.挂号前请先绑定身份证或诊疗卡号。\n\n2.挂号成功后请携带身份证或诊疗卡到诊区候诊。\n\n3.如预约挂号已付费，请于通知就诊时间前30分钟到诊区候诊。\n\n4.如预约挂号未付费，请于通知就诊时间前30分钟到医院自助设备取号。\n\n5.预约挂号已付费只能于就诊日前一天取消预约。</string>
+    <string name="label_medical_card">身份证/诊疗卡号：</string>
+    <string name="hos_bind_card_input">输入身份证号或者诊疗卡</string>
+    <string name="hos_personal_bind">身份证/诊疗卡绑定</string>
+    <string name="hos_personal_family">成员管理</string>
+    <string name="FamilyAddNewActivity">添加就诊人</string>
+    <string name="FamilyExchangeActivity">切换成员</string>
+    <string name="param_label_family_member">成员：%s</string>
+    <string name="doctorRank">医生职称：</string>
+    <string name="hos_bind_binded">已绑定的身份证/诊疗卡号：</string>
+</resources>

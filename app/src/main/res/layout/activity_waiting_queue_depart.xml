@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/android_padding_normal"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <include layout="@layout/include_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/android_margin_normal"
+        android:layout_marginRight="@dimen/android_margin_normal"
+        android:background="@drawable/shape_dash_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/android_margin_micro"
+        android:layout_marginLeft="@dimen/android_margin_normal"
+        android:layout_marginRight="@dimen/android_margin_normal"
+        android:layout_marginTop="@dimen/android_margin_micro"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="更新时间："
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/bg_btn_orange"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <TextView
+            android:id="@+id/waiting_queue_dept_refresh_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="2014-10-28 10:00:14"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/bg_btn_orange" />
+        <Button android:id="@+id/waiting_queue_dept_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/android_width_normal"
+            android:background="@drawable/selector_btn_primary"
+            android:textColor="@color/white"
+            android:onClick="onRefreshClick"
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            android:layout_marginLeft="@dimen/android_margin_normal"
+            android:text="@string/btn_refresh"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/android_margin_normal"
+        android:layout_marginLeft="@dimen/android_margin_normal"
+        android:layout_marginRight="@dimen/android_margin_normal"
+        android:background="@drawable/shape_dash_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="序号"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="姓名"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="排号"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="诊室"
+            android:textSize="@dimen/small_middle_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:background="@color/gray" />
+
+    <include
+        android:id="@id/loadingview"
+        layout="@layout/fragment_loading" />
+
+    <ListView
+        android:id="@+id/waiting_queue_dept_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/msg_no_record"
+        android:textColor="@color/text_gray_depart_item" />
+
+</LinearLayout>

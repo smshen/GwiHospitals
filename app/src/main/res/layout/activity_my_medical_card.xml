@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.gwi.selfplatform.ui.activity.user.MyMedicalCardActivity">
+
+    <include layout="@layout/include_header" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:background="@drawable/shape_corner_border">
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户姓名："
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/my_m_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="身份证号："
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/my_m_card_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="手机号码："
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/my_m_card_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <TableRow android:padding="@dimen/android_margin_normal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="当前卡号："
+                android:textColor="@color/text_gray_depart_item" />
+
+            <TextView
+                android:id="@+id/my_m_card_card_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@color/grey_400" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/regist_record_date_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_400"
+        android:paddingLeft="@dimen/android_padding_middle"
+        android:paddingRight="@dimen/android_padding_normal"
+        android:paddingTop="@dimen/android_padding_normal"
+        android:paddingBottom="@dimen/android_padding_normal"
+        android:text="请选择当前使用的诊疗卡"/>
+    <ListView
+        android:id="@+id/my_m_card_list"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_height="0dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:padding="@dimen/android_margin_middle"
+        android:background="@color/white"
+        android:layout_height="0dp"
+        android:textColor="@color/bg_btn_orange"
+        android:text="系统没有检测到您的诊疗卡信息，请单击“新增诊疗卡”添加并绑定一张诊疗卡"/>
+    <Button
+        android:id="@+id/btn_add_medical_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_primary"
+        android:layout_margin="@dimen/android_margin_normal"
+        android:textColor="@color/white"
+        android:text="新增诊疗卡"/>
+
+</LinearLayout>

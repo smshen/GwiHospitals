@@ -1,0 +1,2 @@
+include ':app', 'androidDaoGenerator', ':MPChartLib', ':commonLib', ':pullToRefreshLibrary', ':statefulLayout', ':volley'
+include ':alipay_lib'

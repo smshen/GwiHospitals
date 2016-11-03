@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.gwi.selfplatform.ui.activity.pay.MedicalCardChargeActivity">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:background="@drawable/shape_corner_border">
+
+                <TableRow android:padding="@dimen/android_margin_normal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="用户姓名："
+                        android:textColor="@color/text_gray_depart_item" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/grey_400" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/grey" />
+
+                <TableRow android:padding="@dimen/android_margin_normal" android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="当前卡号："
+                        android:textColor="@color/text_gray_depart_item" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_list_hospital_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/grey_400" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" />
+
+                <TableRow android:padding="@dimen/android_margin_normal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_card"
+                        android:textColor="@color/text_gray_depart_item" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_card_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/grey_400" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" />
+
+                <TableRow android:padding="@dimen/android_margin_normal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="卡内余额："
+                        android:textColor="@color/text_gray_depart_item" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_card_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/bg_btn_orange" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:background="@drawable/shape_corner_border">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/android_margin_normal"
+                    android:text="请输入充值金额："
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <com.gwi.selfplatform.ui.view.ShakableEditText
+                    android:id="@+id/m_card_charge_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="@dimen/android_margin_normal"
+                    android:layout_marginRight="@dimen/android_margin_normal"
+                    android:background="@drawable/selector_input_border_primary"
+                    android:padding="@dimen/android_padding_normal" />
+
+                <TableRow
+                    android:paddingBottom="@dimen/android_margin_normal"
+                    android:paddingLeft="@dimen/android_margin_normal"
+                    android:paddingTop="@dimen/android_margin_normal">
+
+                    <TextView
+                        android:id="@+id/m_card_charge_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/android_margin_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_primary_green_to_orange"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/android_padding_normal"
+                        android:text="10元"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/android_margin_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_primary_green_to_orange"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/android_padding_normal"
+                        android:text="20元"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/android_margin_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_primary_green_to_orange"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/android_padding_normal"
+                        android:text="50元"
+                        android:textColor="@color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:paddingLeft="@dimen/android_margin_normal"
+                    android:paddingBottom="@dimen/android_margin_normal">
+
+                    <TextView
+                        android:id="@+id/m_card_charge_100"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/android_margin_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_primary_green_to_orange"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/android_padding_normal"
+                        android:text="100元"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_200"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/android_margin_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_primary_green_to_orange"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/android_padding_normal"
+                        android:text="200元"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/m_card_charge_500"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/android_margin_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_primary_green_to_orange"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/android_padding_normal"
+                        android:text="500元"
+                        android:textColor="@color/white" />
+                </TableRow>
+            </TableLayout>
+
+            <com.gwi.selfplatform.ui.view.GWISupportedPayTypeWidget
+                android:id="@+id/m_card_charge_card_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_card_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_marginRight="@dimen/android_margin_normal"
+                android:layout_marginTop="@dimen/android_margin_middle"
+                android:layout_marginBottom="@dimen/android_margin_normal"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_btn_primary"
+                android:text="确 认 支 付"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

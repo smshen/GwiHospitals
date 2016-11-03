@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.gwi.selfplatform.ui.activity.registration.HospSourceSelectActivity">
+
+    <include layout="@layout/include_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/android_padding_normal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/hosp_source_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/male_doctor"/>
+       <LinearLayout
+           android:layout_toRightOf="@id/hosp_source_photo"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/android_margin_normal"
+           android:layout_centerVertical="true"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/hosp_source_doct_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:textAppearanceMedium"
+               android:textColor="@color/text_gray_depart_item"
+               android:text="王一佳"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/android_margin_normal"
+               android:orientation="horizontal">
+               <TextView
+                   android:id="@+id/hosp_source_rank_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="主任医师"/>
+               <TextView
+                   android:id="@+id/hosp_source_fee"
+                   android:layout_width="match_parent"
+                   android:gravity="center"
+                   android:layout_height="wrap_content"
+                   android:text="挂号费：8.00元"/>
+           </LinearLayout>
+       </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hosp_source_order_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_background_primary"
+        android:padding="@dimen/android_padding_normal"
+        android:gravity="center"
+        android:textColor="@color/grey_800"
+        android:text="请选择预约时间：2015年10月"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/hosp_source_date_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/hosp_source_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/hosp_source_viewpager_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

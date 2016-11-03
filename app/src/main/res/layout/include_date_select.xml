@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/white" 
+    android:gravity="center"
+    >
+    
+        
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:textColor="@color/real_gray"
+        android:textSize="@dimen/medium_text_size"
+        android:text="从"/>
+    
+	    <LinearLayout
+	        android:id="@+id/date_start_Layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        >
+		    <Button 
+		        android:id="@+id/date_select_start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center|right"
+		        android:background="@android:color/transparent"
+		        android:text="@string/date_select_start"/>
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dip"
+		        android:layout_gravity="center_vertical|right"
+		        android:src="@drawable/arrows_down"/>
+	    
+	    </LinearLayout>
+    
+   <!--  <View
+        android:layout_width="0.5dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="center"
+        android:background="#80737373"/>
+     -->
+     
+      <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:textColor="@color/real_gray"
+            android:textSize="@dimen/medium_text_size"
+            android:text="至"/>
+    
+    <LinearLayout
+        android:id="@+id/date_end_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        
+        <Button 
+            android:id="@+id/date_select_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:background="@android:color/transparent"
+            android:text="@string/date_select_end"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrows_down"/>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/pay_info_title" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:text="订单信息"
+            android:textSize="@dimen/small_middle_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personDct" />
+
+            <TextView
+                android:id="@+id/personDct"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex" />
+
+            <TextView
+                android:id="@+id/sex"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile" />
+
+            <TextView
+                android:id="@+id/mobile"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IDNumber" />
+
+            <TextView
+                android:id="@+id/IDNumber"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hospital" />
+
+            <TextView
+                android:id="@+id/register_confirm_hospital"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/department" />
+
+            <TextView
+                android:id="@+id/departmentTV"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doctor" />
+
+            <TextView
+                android:id="@+id/doctor"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doctorRank" />
+
+            <TextView
+                android:id="@+id/doctorRank"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rgtTime" />
+
+            <TextView
+                android:id="@+id/rgtTime"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount" />
+
+            <TextView
+                android:id="@+id/amount"
+                style="@style/GWISmallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.gwi.selfplatform.ui.activity.registration.RegistConfirmV2Activity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:orientation="horizontal"
+                android:padding="@dimen/android_padding_normal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="挂号总费用：" />
+
+                <TextView
+                    android:id="@+id/regist_confirm_v2_totalRegFee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/bg_btn_orange_pressed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/android_padding_normal"
+                    android:text="元" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_marginRight="@dimen/android_margin_normal"
+                android:layout_marginTop="@dimen/android_margin_normal"
+                android:background="@drawable/shape_corner_border">
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_patient" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_patient_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_400" />
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊疗卡号：" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_card_no"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_400" />
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卡内余额：" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_card_balance"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_corner_border"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_marginRight="@dimen/android_margin_normal"
+                android:layout_marginTop="@dimen/android_margin_normal">
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_depart" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_depart"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_400" />
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_doctor" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_dct_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="李四" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_dct_duty"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_400" />
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="就诊地点：" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_depart_position"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_400" />
+
+                <TableRow android:padding="@dimen/android_padding_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="就诊时间：" />
+
+                    <TextView
+                        android:id="@+id/regist_confirm_v2_order_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/grey" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:id="@+id/fake_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <!-- pay type -->
+            <!--<include layout="@layout/include_pay_type_v2" />-->
+            <com.gwi.selfplatform.ui.view.GWISupportedPayTypeWidget
+                android:padding="@dimen/android_padding_normal"
+                android:id="@+id/regist_conform_v2_pay_type_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:orientation="horizontal">
+                <com.gwi.selfplatform.ui.view.ShakableEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:hint="请输入验证码"
+                    android:maxEms="4"
+                    android:inputType="numberDecimal"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_border_edit_text"/>
+                <com.gwi.selfplatform.ui.view.ValidateButton
+                    android:layout_marginLeft="@dimen/android_margin_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/android_padding_normal"
+                    android:text="@string/btn_get_code"
+                    android:textColor="@color/white"
+                    android:background="@drawable/selector_btn_primary"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/regist_confirm_v2_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_primary"
+                android:textColor="@color/white"
+                android:padding="@dimen/android_padding_normal"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:text="@string/confirmRgt"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/include_header" />
+</android.support.design.widget.CoordinatorLayout>

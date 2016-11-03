@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:drawableLeft="@drawable/message2"
+        android:drawablePadding="@dimen/android_padding_normal"
+        android:paddingBottom="@dimen/android_padding_middle"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:paddingTop="@dimen/android_padding_middle"
+        android:text="@string/register_num_has_sent"
+        android:textColor="@color/orange_message" />
+
+    <!--    <View style="@style/DividerSytle.Normal" />-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="@dimen/android_height_middle"
+            android:gravity="center"
+            android:padding="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_code" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/et_register_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:padding="@dimen/android_padding_micro"
+                android:singleLine="true" />
+
+            <com.gwi.selfplatform.ui.view.ValidateButton
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size32"
+                android:background="@drawable/selector_btn_primary"
+                android:paddingLeft="@dimen/android_padding_micro"
+                android:paddingRight="@dimen/android_padding_micro"
+                android:text="@string/register_code_action"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <View style="@style/DividerSytle.Normal" />
+
+        <TableRow
+            android:layout_height="@dimen/android_height_middle"
+            android:gravity="center"
+            android:padding="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_password" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:padding="@dimen/android_padding_micro"
+                android:password="true"
+                android:singleLine="true" />
+
+            <CheckedTextView
+                android:id="@+id/ck_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:drawableLeft="@drawable/selector_checked"
+                android:drawablePadding="@dimen/android_padding_micro"
+                android:text="@string/register_hide" />
+        </TableRow>
+
+        <View style="@style/DividerSytle.Normal" />
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/android_margin__big"
+            android:layout_marginLeft="@dimen/android_margin_middle"
+            android:layout_marginRight="@dimen/android_margin_middle"
+            android:background="@drawable/selector_btn_primary"
+            android:text="@string/register_confirm_action"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/register_query_detail_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_300"
+        android:orientation="horizontal"
+        android:padding="@dimen/android_margin_normal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"
+            android:text="我的挂号信息"/>
+        <TextView
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_primary"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/size12"
+            android:paddingRight="@dimen/size12"
+            android:paddingTop="@dimen/size8"
+            android:paddingBottom="@dimen/size8"
+            android:text="@string/refresh"/>
+    </LinearLayout>
+
+    <include layout="@layout/include_loading_indicator" />
+    <include layout="@layout/include_empty_text" />
+    <com.gwi.selfplatform.ui.view.AnimateRecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/drugLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/android_margin_normal"
+                    android:background="@drawable/bg_form_header"
+                    android:gravity="center_vertical"
+                    android:text="概述"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:gravity="center_vertical"
+                    android:text="药物名称" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <TextView
+                    android:id="@+id/drugName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="青霉素钠"
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:gravity="center_vertical"
+                    android:text="药物类型" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <TextView
+                    android:id="@+id/drugType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="青霉素钠"
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:gravity="center_vertical"
+                    android:text="药物成份" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <TextView
+                    android:id="@+id/drugElement"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="青霉素G钠"
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:gravity="center_vertical"
+                    android:text="剂量" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <TextView
+                    android:id="@+id/dosage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="口服，成人每天三次，一次一粒"
+                    android:textColor="@color/text_gray_depart_item" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otherLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/android_margin_normal"
+                    android:background="@drawable/bg_form_header"
+                    android:gravity="center_vertical"
+                    android:text="其他"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_gray_depart_item" />
+
+                <CheckedTextView
+                    android:id="@+id/indications"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="适应症" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/indications_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/indications_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/contraindication"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="禁忌" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/contraindication_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/contraindication_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/notice"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="注意事项" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/notice_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/notice_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+
+                <CheckedTextView
+                    android:id="@+id/ADR"
+                    style="@style/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/android_height_middle_2"
+                    android:background="@drawable/register_notice_content"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/selector_spinner_expandable"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="不良反应" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80737373" />
+
+                <LinearLayout
+                    android:id="@+id/ADR_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/ADR_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/android_padding_normal"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#80737373" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

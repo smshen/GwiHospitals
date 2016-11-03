@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/android_height_big"
+        android:orientation="horizontal" >
+
+        <com.gwi.selfplatform.ui.view.SquareLayout
+            android:layout_width="@dimen/android_height_big"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/month_select_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_white_no_border"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_more_horiz" />
+        </com.gwi.selfplatform.ui.view.SquareLayout>
+
+        <!-- <HorizontalScrollView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" > -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/month_select_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_white_no_border"
+                android:padding="@dimen/android_padding_normal"
+                android:textColor="@color/colorPrimary"
+                android:text="2014年\n12月"
+                android:textSize="@dimen/micro_text_size" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/month_select_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_white_no_border"
+                android:padding="@dimen/android_padding_normal"
+                android:textColor="@color/colorPrimary"
+                android:text="2014年\n12月"
+                android:textSize="@dimen/micro_text_size" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/month_select_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_white_no_border"
+                android:padding="@dimen/android_padding_normal"
+                android:textColor="@color/colorPrimary"
+                android:text="2014年\n12月"
+                android:textSize="@dimen/micro_text_size" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/month_select_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_white_no_border"
+                android:padding="@dimen/android_padding_normal"
+                android:textColor="@color/colorPrimary"
+                android:text="2014年\n12月"
+                android:textSize="@dimen/micro_text_size" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/month_select_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_white_no_border"
+                android:padding="@dimen/android_padding_normal"
+                android:textColor="@color/colorPrimary"
+                android:text="2014年\n12月"
+                android:textSize="@dimen/micro_text_size" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+        </LinearLayout>
+        <!-- </HorizontalScrollView> -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/android_padding_normal" >
+
+        <TextView
+            android:id="@+id/month_select_current_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="当前查询月份：" />
+
+        <TextView
+            android:id="@+id/month_select_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014年3月" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="text_empty" type="id"/>
+    <item name="date_select_start" type="id"/>
+    <item name="date_select_end" type="id"/>
+    <item name="search" type="id"/>
+    <item name="clear" type="id"/>
+    <item name="text_search" type="id"/>
+    <item name="loadingview" type="id"/>
+
+</resources> 

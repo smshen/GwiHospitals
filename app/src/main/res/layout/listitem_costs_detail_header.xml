@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ly_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cqd_box_item_height"
+        android:background="@color/box_title_color"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line_top"
+            style="@style/DividerSytle"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/line_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/cqd_length_range_name">
+
+                <TextView
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_project_name" />
+
+                <View
+                    style="@style/DividerSytleVertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/cqd_length_range_num">
+
+                <TextView
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_number" />
+
+                <View
+                    style="@style/DividerSytleVertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/cqd_length_range_money">
+
+                <TextView
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_money" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_bottom"
+            style="@style/DividerSytle"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

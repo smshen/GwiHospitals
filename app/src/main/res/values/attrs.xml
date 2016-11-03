@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomDateTimePicker">
+        <attr name="DateTimePickerStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DateTimePicker">
+
+        <!--
+             The first year (inclusive), for example "1940".
+             {@deprecated Use minDate instead.}
+
+        -->
+        <attr name="startYear" format="integer" />
+        <!--
+             The last year (inclusive), for example "2010".
+             {@deprecated Use maxDate instead.}
+
+        -->
+        <attr name="endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="spinnersShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="minDate" format="string" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="maxDate" format="string" />
+        <!-- @hide The layout of the date time picker. -->
+        <attr name="internalLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ExTabPageIndicator">
+        <attr name="ExTabPageTitleStyle" format="reference" />
+        <attr name="tab_gravity" /> 
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <attr name="tab_gravity">
+        <enum name="fill" value="1"/>
+        <enum name="left" value="2"/>
+        <enum name="right" value="3"/>
+    </attr>
+    
+    <declare-styleable name="GifView">
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FontProgressBar">
+        <attr name="Mode">
+            <enum name="normal" value="1"/>
+            <enum name="popWindow" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

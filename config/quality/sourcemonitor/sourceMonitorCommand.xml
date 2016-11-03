@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ 
+
+<!-- =======================================================================
+
+Examples of typical SourceMonitor command line script commands.
+
+======================================================================== -->
+
+ 
+
+<sourcemonitor_commands>
+
+ 
+
+   <!-- ===================================================================
+
+    The write_log element value is used for execution of commands in this
+
+    file, not the log errors flag set in SourceMonitor's options dialog.
+
+    If this element is missing, command progress and errors will be written
+
+    to the SourceMonitor log file.
+
+    =================================================================== -->
+
+ 
+
+   <write_log>false</write_log>
+
+ 
+
+   <!-- ===============================================================
+
+     This command is typical for a project that does not yet exist.
+
+     The file name becomes the project name of the new project.
+
+   ================================================================ -->
+
+ 
+
+   <command>
+
+ 
+
+       <project_file>..\..\..\SourceMonitorReport.smproj</project_file>
+
+ 
+
+       <!-- ===============================================================
+
+        For a new project, you must specify the language and the location
+
+        of the source code. You can provide an absolute path for the project
+
+        file (as in this example) or you can provide a relative path. In the
+
+        latter case, the path will be resolved relative to the current
+
+        working directory. If you want to specify the project file relative
+
+        to the location of your script file, you can use element
+
+        <project_file_wrt_script> instead of <project_file>.
+
+ 
+
+        You may also set the Modified Complexity and Ignore Blank Lines options.
+
+       ================================================================ -->
+
+ 
+
+       <project_language>Java</project_language>
+
+       <modified_complexity>true</modified_complexity>
+
+       <ignore_blank_lines>false</ignore_blank_lines>
+
+       <source_directory>app\src\main\java\</source_directory>
+
+       <parse_utf8_files>True</parse_utf8_files>
+
+       <checkpoint_name>Baseline</checkpoint_name>
+
+       <checkpoint_date>1999-08-31T12:24:56</checkpoint_date>
+
+ 
+
+       <!-- ===============================================================
+
+        For either a new or existing project, you can specify that the maximum
+
+        block depth be display as measured. That means that if the maximum is
+
+        greater than 9 the maximum depth display will show the actual value,
+
+        not "9+". For example:
+
+       ================================================================ -->
+
+ 
+
+      <show_measured_max_block_depth>True</show_measured_max_block_depth>
+
+ 
+
+       <!-- ===============================================================
+
+        For either a new or existing project, you can override the default
+
+        or current file extensions (set in the Options dialog) for source
+
+        files to be included in a new checkpoint. All files with the
+
+        extensions you specify here will be included in the new checkpoint.
+
+       ================================================================ -->
+
+ 
+
+       <file_extensions>*.java</file_extensions>
+
+       <include_subdirectories>true</include_subdirectories>
+
+ 
+
+       <!-- ===============================================================
+
+        Export of metrics data is supported for a single checkpoint per
+
+        command (the one identified in the <checkpoint_name> tag or one that
+
+        is automatically created as explained below). Exported metrics data
+
+        is specified by the export type: "1" for the project summary as XML,
+
+        "2" for checkpoint details as XML, or "3" project details as CSV.
+
+        You specify the type with a number 1, 2 or 3 in the element's
+
+        contents. All other text is ignored. The following examples are
+
+        all valid specification of export type 2:
+
+          <export_type>2 (project details as XML)</export_type>
+
+          <export_type>Project details as XML: 2</export_type>
+
+          <export_type>2</export_type>
+
+       ================================================================ -->
+
+ 
+
+       <export>
+
+           <export_insert>xml-stylesheet type='text/xsl' href='SourceMonitor.xslt'</export_insert>
+
+           <export_file>app\build\reports\sourceMonitorReport.xml</export_file>
+
+           <export_type>2</export_type>
+
+           <export_option>1</export_option>
+
+       </export>
+
+ 
+
+       <!-- ===============================================================
+
+        When the </command> tag is encountered, the command specified above
+
+        is executed. In this sample command, the project and checkpoint are
+
+        created and the XML export file is generated.
+
+       ================================================================ -->
+
+ 
+
+   </command>
+  
+
+</sourcemonitor_commands>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ly_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cqd_box_item_height"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line_top"
+            style="@style/DividerSytle"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/line_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/aqd_length_range_name">
+
+                <TextView
+                    android:id="@+id/txt_bacterial_name"
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_bacterial_name" />
+
+                <View
+                    style="@style/DividerSytleVertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/aqd_length_range_other">
+
+                <TextView
+                    android:id="@+id/txt_antibiotics_name"
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_antibiotics_name" />
+
+                <View
+                    style="@style/DividerSytleVertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/aqd_length_range_other">
+
+                <TextView
+                    android:id="@+id/txt_susceptibility_result"
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_susceptibility_result" />
+
+                <View
+                    style="@style/DividerSytleVertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/aqd_length_range_other">
+
+                <TextView
+                    android:id="@+id/txt_num_value"
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_num_value" />
+
+                <View
+                    style="@style/DividerSytleVertical"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/aqd_length_range_other">
+
+                <TextView
+                    android:id="@+id/txt_bacterial_num"
+                    style="@style/CostsQueryDetailBoxTextCenter"
+                    android:text="@string/label_bacterial_num" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_bottom"
+            style="@style/DividerSytle"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

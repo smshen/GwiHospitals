@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_regist_record_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/android_margin_normal"
+    android:background="@drawable/selector_regist_record"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/android_padding_normal">
+
+    <CheckedTextView
+        android:id="@+id/item_regist_record_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/selector_regist_record_indicator"
+        android:text="直接挂号单"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/android_margin_normal"
+            android:layout_marginRight="@dimen/android_margin_normal"
+            android:layout_marginTop="@dimen/android_padding_middle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_regist_record_dct_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王一佳"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/item_regist_record_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/android_padding_micro"
+                android:paddingRight="@dimen/android_padding_micro"
+                android:singleLine="true"
+                android:text="主任医师" />
+
+
+            <TextView
+                android:id="@+id/item_regist_record_dept"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:minEms="7"
+                android:text="科室：心血管内科" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/android_margin_normal"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_regist_record_order_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="就诊时间：2015-12-05 12：00" />
+
+            <CheckedTextView
+                android:id="@+id/item_regist_record_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableLeft="@drawable/selector_state"
+                android:text="已就诊" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

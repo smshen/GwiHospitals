@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/regist_record_date_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_400"
+        android:gravity="center"
+        android:padding="@dimen/android_padding_middle"
+        android:text="从2015-10-01至2015-10-31"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/android_margin_normal"
+        android:drawablePadding="@dimen/android_padding_micro"
+        android:drawableLeft="@drawable/information"
+        android:gravity="center_vertical"
+        android:text="针对未取号的预约挂号单，可进入详情页取消预约。"
+        android:background="@color/grey_300"/>
+   <cz.kinst.jakub.view.StatefulLayout
+       android:id="@+id/stateful_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <com.gwi.selfplatform.ui.view.AnimateRecyclerView
+           android:id="@+id/regist_record_recycler_view"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+   </cz.kinst.jakub.view.StatefulLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include android:id="@+id/header"
+        layout="@layout/include_header" />
+
+    <FrameLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/smart_treat_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/man_body_up_1"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/smart_treat_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/man_body_down"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/smart_treat_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/man_body_up"
+            android:contentDescription="@null" />
+        <!-- android:visibility="gone" -->
+
+    </FrameLayout>
+
+    <CheckedTextView
+        android:layout_below="@id/header"
+        android:id="@+id/smart_treat_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_padding_normal"
+        android:background="@drawable/selector_ic_sex"
+        android:checked="false"
+        android:clickable="true" />
+
+    <CheckedTextView
+        android:layout_below="@id/header"
+        android:id="@+id/smart_treat_orentation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/android_margin_nano"
+        android:background="@drawable/selector_btn_primary"
+        android:checked="false"
+        android:clickable="true"
+        android:padding="@dimen/android_padding_normal"
+        android:text="正面"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:contentDescription="@null"
+        android:id="@+id/smart_treat_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/android_margin_nano"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_action_list" />
+
+    <ImageView
+        android:layout_below="@id/header"
+        android:contentDescription="@null"
+        android:id="@+id/smart_tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anim_list_tap" />
+
+</RelativeLayout>

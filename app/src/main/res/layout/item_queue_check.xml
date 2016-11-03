@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner_gray"
+    android:layout_marginLeft="@dimen/android_margin_normal"
+    android:layout_marginRight="@dimen/android_margin_normal"
+    android:layout_marginBottom="@dimen/android_margin_normal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/bg_btn_orange"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:text="候诊"
+            android:textColor="@color/white" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+
+            <TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/android_margin_normal"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的序号：" />
+
+                    <TextView
+                        android:id="@+id/queue_check_waiting_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/android_margin_normal"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前序号：" />
+
+                    <TextView
+                        android:id="@+id/queue_check_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123" />
+                </TableRow>
+            </TableRow>
+
+            <TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/android_margin_normal"
+                    android:layout_marginRight="@dimen/android_margin_normal"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="科室名称：" />
+
+                    <TextView
+                        android:id="@+id/queue_check_depart_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                     android:layout_marginLeft="@dimen/android_margin_normal"
+                    android:layout_marginRight="@dimen/android_margin_normal"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="医生：" />
+
+                    <TextView
+                        android:id="@+id/queue_check_doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123" />
+                </TableRow>
+            </TableRow>
+
+            <TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:padding="@dimen/android_margin_normal"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="日期：" />
+
+                    <TextView
+                        android:id="@+id/queue_check_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2014-10-28" />
+                </TableRow>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

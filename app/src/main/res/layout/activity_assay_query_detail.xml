@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <LinearLayout
+                style="@style/CostsQueryDetailBox"
+                android:orientation="vertical">
+
+                &lt;!&ndash; ROW1 &ndash;&gt;
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_patient_name_colon" />
+
+                    <TextView
+                        android:id="@+id/patient_name"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:text="@string/label_patient_name_colon" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                &lt;!&ndash; ROW2 &ndash;&gt;
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_send_department_colon" />
+
+                    <TextView
+                        android:id="@+id/send_department"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:text="@string/label_send_department_colon" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                &lt;!&ndash; ROW3 &ndash;&gt;
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_project_name_colon" />
+
+                    <TextView
+                        android:id="@+id/project_name"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:text="@string/label_project_name_colon" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                &lt;!&ndash; ROW4 &ndash;&gt;
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_assay_time_colon" />
+
+                    <TextView
+                        android:id="@+id/assay_time"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:text="@string/label_assay_time_colon" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                &lt;!&ndash; ROW5 &ndash;&gt;
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_assay_departments_colon" />
+
+                    <TextView
+                        android:id="@+id/assay_departments"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:text="@string/label_assay_departments_colon" />
+
+                    <View style="@style/CostsQueryDetailDividerSytle" />
+                </RelativeLayout>
+
+                &lt;!&ndash; ROW6 &ndash;&gt;
+                <RelativeLayout style="@style/CostsQueryDetailBoxItem">
+
+                    <TextView
+                        style="@style/CostsQueryDetailBoxTextL"
+                        android:text="@string/label_assay_doctor_colon" />
+
+                    <TextView
+                        android:id="@+id/assay_doctor"
+                        style="@style/CostsQueryDetailBoxTextR"
+                        android:text="@string/label_assay_doctor_colon" />
+                </RelativeLayout>
+            </LinearLayout>-->
+
+            <include layout="@layout/include_assay_query_detail_box" />
+
+            <LinearLayout
+                style="@style/CostsQueryDetailBox.Rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/android_stroke_width_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cqd_box_item_height"
+                    android:background="@color/box_title_color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/android_padding_middle"
+                    android:text="@string/label_assay_desp" />
+
+                <View style="@style/CostsQueryDetailDividerSytle" />
+
+                <TextView
+                    android:id="@+id/txt_assay_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/android_padding_normal"
+                    android:paddingLeft="@dimen/android_padding_middle"
+                    android:paddingRight="@dimen/android_padding_middle"
+                    android:paddingTop="@dimen/android_padding_normal"
+                    android:text="@string/label_assay_desp" />
+
+                <View style="@style/CostsQueryDetailDividerSytle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cqd_box_item_height"
+                    android:background="@color/box_title_color"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/android_padding_middle"
+                    android:text="@string/label_assay_result" />
+
+                <View style="@style/CostsQueryDetailDividerSytle" />
+
+                <TextView
+                    android:id="@+id/txt_assay_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/android_padding_normal"
+                    android:paddingLeft="@dimen/android_padding_middle"
+                    android:paddingRight="@dimen/android_padding_middle"
+                    android:paddingTop="@dimen/android_padding_normal"
+                    android:text="@string/label_assay_desp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

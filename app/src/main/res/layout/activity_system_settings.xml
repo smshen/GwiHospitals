@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/reg_select_v2_items_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/ly_online_upgrade"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/sel_upgrade" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/txt_online_upgrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:text="在线升级"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <TableRow
+                    android:id="@+id/ly_service_items"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/selector_bookingform_1"
+                            android:textColor="@drawable/sel_terms" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:text="服务条款"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <TableRow
+                    android:id="@+id/ly_feedback"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/sel_opinion" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:text="意见反馈"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <TableRow
+                    android:id="@+id/ly_about"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_image_inicator_background">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/android_padding_middle"
+                            android:src="@drawable/sel_about" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_setting_item_grey_to_white"
+                        android:drawableRight="@drawable/selector_arror_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/android_padding_normal"
+                        android:paddingRight="@dimen/android_padding_middle"
+                        android:text="关于"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@drawable/selector_item_text" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

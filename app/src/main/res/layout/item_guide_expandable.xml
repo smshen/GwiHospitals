@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <CheckedTextView
+        android:id="@+id/expand_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="@color/item_Bg_Primary"
+        android:checked="true"
+        android:drawableRight="@drawable/selector_arrow_updown"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:paddingRight="@dimen/android_padding_normal"
+        android:text="我在马路边，见到一分钱"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_color_primary" />
+    <ProgressBar android:id="@+id/expand_group_loading_view" 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="end|center_vertical"
+        style="?android:attr/progressBarStyleInverse"/>
+</FrameLayout><!-- android:paddingStart="?android:attr/expandableListPreferredItemPaddingLeft" -->

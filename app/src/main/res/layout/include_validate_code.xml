@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/android_height_middle"
+    android:orientation="horizontal">
+
+    <!--    <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/validate_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_corner_gray"
+            android:gravity="center"
+            android:hint="验证码"
+            android:inputType="number"
+            android:padding="@dimen/android_padding_micro" />
+
+        <com.gwi.selfplatform.ui.view.ValidateButton
+            android:id="@+id/validate_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/validate_code_margin_left"
+            android:background="@drawable/login_btn_bg"
+            android:paddingLeft="@dimen/android_padding_micro"
+            android:paddingRight="@dimen/android_padding_micro"
+            android:text="@string/btn_get_code"
+            android:textColor="@color/white" />-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/android_margin_normal">
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/android_padding_normal"
+            android:paddingRight="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_code" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/validate_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="number"
+                android:padding="@dimen/android_padding_micro"
+                android:singleLine="true" />
+
+            <com.gwi.selfplatform.ui.view.ValidateButton
+                android:id="@+id/validate_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_primary"
+                android:paddingLeft="@dimen/android_padding_micro"
+                android:paddingRight="@dimen/android_padding_micro"
+                android:text="@string/btn_get_code"
+                android:textColor="@color/white" />
+        </TableRow>
+
+<!--        <View
+            style="@style/DividerSytle.Normal"
+            android:layout_marginTop="@dimen/android_margin_normal" />-->
+
+    </TableLayout>
+
+</LinearLayout>

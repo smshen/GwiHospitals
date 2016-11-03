@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <GridView
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+    <ImageButton android:id="@+id/home_grd_indicator_up"
+        android:background="@drawable/ic_trending_neutral_up_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:layout_alignParentRight="true"/>
+    <ImageButton android:id="@+id/home_grd_indicator_center"
+        android:background="@drawable/ic_swap_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    <ImageButton android:id="@+id/home_grd_indicator_down"
+        android:background="@drawable/ic_trending_neutral_down_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_marginBottom="@dimen/android_margin_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

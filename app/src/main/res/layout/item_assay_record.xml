@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:elevation="@dimen/card_elevation"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="8dp"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:id="@+id/ly_root"
+        style="@style/ListTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_regist_record"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/cqd_icon_pading_left">
+
+        <!--        <CheckedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/paymentorder_green"
+                    android:text="@string/label_costs_details"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bookingform5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/android_pading_big"
+            android:paddingRight="@dimen/android_padding_middle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/comm_range_average"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/android_padding_micro">
+
+                <TextView
+                    android:id="@+id/txt_assay_type"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/label_payment_colon"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <!--                <TextView
+                                    android:id="@+id/total_payment"
+                                    style="@style/ListTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_toRightOf="@+id/txt_assay_type"
+                                    android:paddingLeft="@dimen/android_padding_micro"
+                                    android:singleLine="true"
+                                    android:text="@string/label_yuan_period" />-->
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/txt_doctor_name"
+                    android:text="@string/label_doctor_colon" />
+
+                <TextView
+                    android:id="@+id/txt_doctor_name"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/comm_range_average"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/android_padding_micro">
+
+                <TextView
+                    android:id="@+id/location_colon"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/label_executive_location_colon" />
+
+                <TextView
+                    android:id="@+id/txt_location"
+                    style="@style/ListTextStyle"
+                    android:layout_width="@dimen/size120"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/location_colon"
+                    android:singleLine="true" />
+
+                <!--                <TextView
+                                    style="@style/ListTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toLeftOf="@+id/txt_time"
+                                    android:text="@string/label_doctor_colon" />-->
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

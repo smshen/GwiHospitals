@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/android_padding_normal"
+    android:paddingRight="@dimen/android_padding_normal">
+
+    <include layout="@layout/include_header" />
+
+    <RelativeLayout
+        android:id="@+id/setting_Rl_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/android_height_middle"
+        android:background="@drawable/selector_setting_item"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/android_margin_micro"
+            android:text="在线升级"></TextView>
+
+        <TextView
+            android:id="@+id/setting_version_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/android_margin_micro"
+            android:text="1.0"></TextView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/setting_Rl_app_name_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/android_height_middle"
+        android:background="@drawable/selector_setting_item"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/android_margin_micro"
+            android:text="医院修改"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/android_margin_micro"
+            android:text="(demo 测试)"></TextView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/setting_tvservice_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/android_height_middle"
+        android:background="@drawable/selector_setting_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/android_margin_micro"
+        android:text="服务条款"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/setting_tvfeed_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/android_height_middle"
+        android:background="@drawable/selector_setting_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/android_margin_micro"
+        android:text="意见反馈"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/setting_tvabout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/android_height_middle"
+        android:background="@drawable/selector_setting_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/android_margin_micro"
+        android:text="关于"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/setting_layout_qr_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/android_height_middle"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_item"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/android_margin_micro"
+            android:text="扫描二维码下载："></TextView>
+
+        <TextView
+            android:id="@+id/setting_tv_version_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/android_margin_micro"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_qr_download" />
+
+</LinearLayout>

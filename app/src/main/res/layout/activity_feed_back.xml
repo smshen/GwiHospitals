@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical"
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/android_padding_normal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/android_height_middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_corner_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/android_padding_normal"
+                android:paddingRight="@dimen/android_padding_normal"
+                android:text="@string/feed_back_type" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/android_padding_normal">
+
+                <RadioButton
+                    android:id="@+id/feed_back_rb_suggest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/selector_checked"
+                    android:text="@string/feed_back_suggest" />
+
+                <RadioButton
+                    android:id="@+id/feed_back_rb_complaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_checked"
+                    android:text="@string/feed_back_complaint" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/feed_back_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:hint="内容不超过100字"
+            android:layout_marginTop="@dimen/android_margin_middle"
+            android:background="@drawable/bg_corner_gray"
+            android:gravity="top"
+            android:inputType="none"
+            android:maxLines="10"
+            android:minLines="10"
+            android:padding="@dimen/android_padding_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/android_height_middle"
+            android:layout_marginTop="@dimen/android_margin_middle"
+            android:background="@drawable/bg_corner_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/android_padding_normal"
+            android:paddingRight="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed_back_your_phone" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/feed_back_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="phone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

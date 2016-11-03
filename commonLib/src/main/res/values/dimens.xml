@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 四类字体大小 -->
+    <dimen name="micro_text_size">12sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="small_middle_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="xlarge_text_size">36sp</dimen>
+    <!-- 四类字体大小 -->
+
+    <dimen name="android_margin_normal">8dp</dimen>
+    <dimen name="android_margin_middle">16dp</dimen>
+    <dimen name="android_height_middle">48dp</dimen>
+</resources>

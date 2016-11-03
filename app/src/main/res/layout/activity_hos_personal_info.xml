@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/android_margin_normal"
+                android:layout_marginLeft="@dimen/android_margin_middle"
+                android:layout_marginRight="@dimen/android_margin_middle"
+                android:layout_marginTop="@dimen/android_margin_middle"
+                android:gravity="center"
+                android:text="完善个人信息能够更好的为您服务"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bg_btn_orange" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/android_margin_middle"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_marginRight="@dimen/android_margin_normal"
+                android:background="@color/grey" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_margin_normal"
+                android:layout_marginRight="@dimen/android_margin_normal"
+                android:background="@drawable/shape_corner_border">
+
+
+                <TableRow
+                    android:id="@+id/hos_personal_mobile_change"
+                    style="@style/hos_personal_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:onClick="onClick">
+
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_phone" />
+
+                    <TextView
+                        android:id="@+id/hos_personal_info_phone"
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_action_next_item"
+                        android:paddingRight="@dimen/android_margin_normal"
+                        android:textColor="@color/text_gray_depart_item" />
+                </TableRow>
+
+                <View
+                    style="@style/hos_personal_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <TableRow
+                    style="@style/hos_personal_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_nick_name" />
+
+                    <com.gwi.selfplatform.ui.view.ShakableEditText
+                        android:id="@+id/hos_personal_info_nick_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_depart_item" />
+                </TableRow>
+
+                <View
+                    style="@style/hos_personal_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone" />
+
+                <TableRow
+                    style="@style/hos_personal_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_real_name" />
+
+                    <com.gwi.selfplatform.ui.view.ShakableEditText
+                        android:id="@+id/hos_personal_info_real_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text|textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_depart_item" />
+                </TableRow>
+
+                <View
+                    style="@style/hos_personal_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <TableRow
+                    style="@style/hos_personal_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/android_margin_nano">
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_id_card" />
+
+                    <com.gwi.selfplatform.ui.view.SecureTextView
+                        android:id="@+id/hos_personal_info_id_card"
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_depart_item" />
+                </TableRow>
+
+                <View
+                    style="@style/hos_personal_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/android_margin_nano"
+                    android:paddingBottom="@dimen/android_padding_normal"
+                    android:paddingLeft="@dimen/android_padding_normal"
+                    android:paddingTop="@dimen/android_padding_normal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_sex" />
+
+                    <RadioGroup
+                        android:id="@+id/hos_personal_info_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/hos_personal_info_male"
+                            style="@style/hos_personal_item_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_checked"
+                            android:drawablePadding="@dimen/android_padding_micro"
+                            android:text="@string/register_male" />
+
+                        <RadioButton
+                            android:id="@+id/hos_personal_info_female"
+                            style="@style/hos_personal_item_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/android_margin_middle"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_checked"
+                            android:drawablePadding="@dimen/android_padding_micro"
+                            android:text="@string/register_female" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/hos_personal_info_sex_input"
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_depart_item"
+                        android:visibility="visible" />
+                </TableRow>
+
+                <View
+                    style="@style/hos_personal_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone" />
+
+                <TableRow
+                    style="@style/hos_personal_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/android_margin_nano"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_birth" />
+
+                    <TextView
+                        android:id="@+id/hos_personal_info_birth"
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_depart_item" />
+                </TableRow>
+
+                <View
+                    style="@style/hos_personal_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone" />
+
+                <TableRow
+                    style="@style/hos_personal_info_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/android_margin_nano">
+
+                    <TextView
+                        style="@style/hos_personal_item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hos_info_address" />
+
+                    <com.gwi.selfplatform.ui.view.ShakableEditText
+                        android:id="@+id/hos_personal_info_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_depart_item" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/hos_personal_info_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/android_margin__big"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:background="@drawable/selector_btn_primary"
+        android:onClick="onClick"
+        android:paddingBottom="@dimen/android_padding_normal"
+        android:paddingTop="@dimen/android_padding_normal"
+        android:text="@string/hos_info_modify"
+        android:textColor="@color/white" />
+
+</LinearLayout>

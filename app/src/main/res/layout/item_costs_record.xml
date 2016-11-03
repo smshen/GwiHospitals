@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:elevation="@dimen/card_elevation"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="8dp"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:id="@+id/ly_root"
+        style="@style/ListTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_regist_record"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/android_padding_normal">
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bookingform"
+            android:text="@string/label_costs_details"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorPrimary" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_payment_colon"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/total_payment"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/android_padding_micro"
+                    android:paddingRight="@dimen/android_padding_micro"
+                    android:singleLine="true"
+                    android:text="@string/label_yuan_period" />
+
+                <TextView
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/label_doctor_colon" />
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:minEms="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/android_margin_normal"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_executive_location_colon" />
+
+                <TextView
+                    android:id="@+id/executive_location"
+                    style="@style/ListTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+                <!--                <CheckedTextView
+                                    android:id="@+id/regist_record_state"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:drawableLeft="@drawable/selector_state"
+                                    android:text="已就诊" />-->
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <!--    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/android_margin_middle"
+            android:text="@string/hint_pwd_find_phone_note"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/small_middle_text_size"
+            android:visibility="gone" />
+
+        <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/pwd_find_phone_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/android_height_middle"
+            android:layout_marginBottom="@dimen/android_margin_middle"
+            android:background="@drawable/bg_corner_gray"
+            android:hint="@string/register_hint_user_code"
+            android:padding="@dimen/android_padding_micro"
+            android:visibility="gone" />
+
+        <com.gwi.selfplatform.ui.view.ShakableEditText
+            android:id="@+id/pwd_find_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/android_height_middle"
+            android:layout_marginBottom="@dimen/android_margin_middle"
+            android:background="@drawable/bg_corner_gray"
+            android:hint="@string/hint_pwd_find_phone"
+            android:padding="@dimen/android_padding_micro" />
+
+        <include layout="@layout/include_validate_code" />
+
+        <Button
+            android:id="@+id/pwd_find_phone_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/android_height_middle"
+            android:layout_marginTop="@dimen/android_margin_middle"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/validate"
+            android:textColor="@color/white" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:drawableLeft="@drawable/message2"
+        android:drawablePadding="@dimen/android_padding_normal"
+        android:paddingBottom="@dimen/android_padding_middle"
+        android:paddingLeft="@dimen/android_padding_normal"
+        android:paddingTop="@dimen/android_padding_middle"
+        android:text="@string/register_telphone_num"
+        android:textColor="@color/orange_message" />
+
+    <!--    <View style="@style/DividerSytle.Normal" />-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="@dimen/android_height_middle"
+            android:gravity="center"
+            android:padding="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="手机号码：" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/pwd_find_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:padding="@dimen/android_padding_micro"
+                android:singleLine="true" />
+        </TableRow>
+
+        <View style="@style/DividerSytle.Normal" />
+
+        <TableRow
+            android:layout_height="@dimen/android_height_middle"
+            android:gravity="center"
+            android:padding="@dimen/android_padding_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_code" />
+
+            <com.gwi.selfplatform.ui.view.ShakableEditText
+                android:id="@+id/validate_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/android_padding_normal"
+                android:layout_marginRight="@dimen/android_padding_normal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_border_primary"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:padding="@dimen/android_padding_micro"
+                android:singleLine="true" />
+
+            <com.gwi.selfplatform.ui.view.ValidateButton
+                android:id="@+id/validate_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size32"
+                android:background="@drawable/selector_btn_primary"
+                android:paddingLeft="@dimen/android_padding_micro"
+                android:paddingRight="@dimen/android_padding_micro"
+                android:text="@string/register_code_action"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <View style="@style/DividerSytle.Normal" />
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/pwd_find_phone_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/android_margin__big"
+            android:layout_marginLeft="@dimen/android_margin_middle"
+            android:layout_marginRight="@dimen/android_margin_middle"
+            android:background="@drawable/selector_btn_primary"
+            android:text="@string/register_verification"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

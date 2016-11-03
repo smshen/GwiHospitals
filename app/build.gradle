@@ -1,0 +1,399 @@
+apply plugin: 'com.android.application'
+apply from: '../config/quality.gradle'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.gwi.phr.hospital"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 5
+        versionName "1.0.3"
+
+//        ndk {
+////            moduleName 'Phr'
+//            moduleName 'libBaiduMapSDK_v3_1_0'
+//            moduleName 'liblocSDK3'
+//            cFlags "-DANDROID_NDK"
+//            ldLibs "log"
+//        }
+//        ndk {
+//            moduleName 'Phr'
+//            abiFilters "armeabi", "armeabi-v7a", "x86"
+//        }
+
+    }
+
+//    //增量更新
+//    dexOptions {
+//        preDexLibraries = Boolean.valueOf(System.getProperty("pre-dex", "true"))
+//    }
+
+//    dexOptions {
+//        preDexLibraries = false
+//    }
+
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    //兼容6.0
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        debug {
+            try {
+                storeFile file("ccyl.keystore")
+                storePassword KEYSTORE_PASSWORD
+                keyAlias "ccyl"
+                keyPassword KEY_PASSWORD
+            } catch (ex) {
+                throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties.")
+            }
+        }
+        release {
+            try {
+                storeFile file("ccyl.keystore")
+                storePassword KEYSTORE_PASSWORD
+                keyAlias "ccyl"
+                keyPassword KEY_PASSWORD
+            } catch (ex) {
+                throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties.")
+            }
+        }
+    }
+
+    buildTypes {
+        def TYPE_STRING = "String";
+        def SERVICE_URL_DEBUG = "SERVICE_URL_DEBUG"
+        def SERVICE_URL = "SERVICE_URL"
+        def ALI_PAY_URL = "ALI_PAY_URL"
+        def WX_PAY_URL = "WX_PAY_URL"
+        def WX_PREPAY_URL = "WX_PREPAY_URL"
+        def CCB_PAY_URL = "CCB_PAY_URL"
+        debug {
+            //7813,http://172.16.201.2:7781
+            //湘西内网：172.16.60.31:7781，湘西外网:http://app.xxzrmyy.jsu.edu.cn/PhrWebApi
+            //云：120.55.242.7:7781
+            buildConfigField TYPE_STRING, SERVICE_URL_DEBUG, '"http://172.16.201.3:7813/Service.asmx"'
+            buildConfigField TYPE_STRING, SERVICE_URL, '"http://120.55.242.7:7781/PhrWebApi"'
+            buildConfigField TYPE_STRING, ALI_PAY_URL, '"http://pay.gwi.com.cn/Alipay/NativeNotify.aspx"'
+            buildConfigField TYPE_STRING, WX_PAY_URL, '"http://pay.gwi.com.cn/wechat/notify.aspx"'
+            buildConfigField TYPE_STRING, WX_PREPAY_URL, '"https://api.mch.weixin.qq.com/pay/unifiedorder"'
+            buildConfigField TYPE_STRING, CCB_PAY_URL, '"https://ibsbjstar.ccb.com.cn/app/ccbMain"'
+            minifyEnabled false
+        }
+        release {
+            //http://120.55.242.7:7781/PhrWebApi
+            //phr.gwi.com.cn
+            buildConfigField TYPE_STRING, SERVICE_URL_DEBUG, '"http://172.16.201.3:7813/Service.asmx"'
+            buildConfigField TYPE_STRING, SERVICE_URL, '"http://phr.gwi.com.cn:7781/PhrWebApi"'
+            buildConfigField TYPE_STRING, ALI_PAY_URL, '"http://pay.gwi.com.cn/Alipay/NativeNotify.aspx"'
+            buildConfigField TYPE_STRING, WX_PAY_URL, '"http://pay.gwi.com.cn/wechat/notify.aspx"'
+            buildConfigField TYPE_STRING, WX_PREPAY_URL, '"https://api.mch.weixin.qq.com/pay/unifiedorder"'
+            buildConfigField TYPE_STRING, CCB_PAY_URL, '"https://ibsbjstar.ccb.com.cn/app/ccbMain"'
+
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def date = new Date();
+//                    def formattedDate = date.format('yyyyMMddHHmmss')
+//                    output.outputFile = new File(output.outputFile.parent,
+//                            output.outputFile.name.replace("-release", "-" + formattedDate)
+//                    )
+//                }
+//            }
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def date = new Date();
+                    def formattedDate = date.format('yyyyMMdd')
+                    output.outputFile = new File(output.outputFile.parent,
+                            output.outputFile.name.replace(".apk", "-${variant.versionCode}-v${variant.versionName}-${formattedDate}.apk"))
+                }
+            }
+        }
+    }
+
+    android.variantFilter { variant ->
+//                //忽略多机构mainMutiAgency源代码统一目录
+//                if(/*variant.buildType.name.equals('release')&& */variant.getFlavors().get(0).name.equals('mainMutiAgency')) {
+//                    variant.setIgnore(true);
+//                }
+
+        //减少build时间
+        //xtszxyy,csszxyy,sysdyrmyy,cssyyy,szkfyy,fssdwrmyy,mnyy,xxrmyy,ccylbjjypt,dgsbpt,dldxfszsyy
+        if (!variant.getFlavors().get(0).name.equals('xxrmyy')) {
+            variant.setIgnore(true);
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+//    task ndkBuild(type: Exec) {
+//        commandLine 'ndk-build', '-C', file('src/main/jni').absolutePath
+//    }
+//
+//    tasks.withType(JavaCompile) {
+//        compileTask -> compileTask.dependsOn ndkBuild
+//    }
+
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/java'
+//            manifest.srcFile 'AndroidManifest.xml'
+//            jniLibs.srcDir 'src/main/libs' // use the jni .so compiled from the manual ndk-build command
+//            jni.srcDirs = [] //disable automatic ndk-build call
+        }
+
+        //多机构统一源码
+        dgsbpt {
+            java.srcDirs += 'src/mainMutiAgency/java'
+        }
+        ccylbjjypt {
+            java.srcDirs += 'src/mainMutiAgency/java'
+        }
+        sczyyglj {
+            java.srcDirs += 'src/mainMutiAgency/java'
+        }
+
+        fssdwrmyy {
+            java.srcDirs += 'src/fssdwrmyy/java'
+        }
+
+//        xyfe {
+////            java.srcDirs = ['src/xyfe/java']
+//            res.srcDirs = ['src/xyfe/res']
+////            manifest.srcFile 'src/demo/AndroidManifest.xml'
+//        }
+////        main.jniLibs.srcDirs 'src/main/jniLibs'
+//        fssdwrmyy {
+//            res.srcDirs = ['src/fssdwrmyy/res']
+//        }
+    }
+
+    productFlavors {
+        def TYPE_BOOLEAN = "boolean";
+        def TYPE_STRING = "String";
+        def SERVER_URL_FLAVOR = "SERVER_URL_FLAVOR";
+        def ALIPAY_URL_FLAVOR = "ALIPAY_URL_FLAVOR";
+        def WXPAY_URL_FLAVOR = "WEXINPAY_URL_FLAVOR";
+        def IS_WX_PAY = "IS_WX_PAY";
+        def IS_CCB_PAY = "IS_CCB_PAY";
+        def CCB_PAY_SAFE_URL = "CCB_PAY_SAFE_URL";
+        def NA = '"NA"';
+
+        xxrmyy {
+            applicationId 'com.gwi.phr.xxrmyy'
+            versionCode 11
+            versionName '2.0.0'
+            minSdkVersion 9
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+            buildConfigField TYPE_STRING, SERVER_URL_FLAVOR, '"http://app.xxzrmyy.jsu.edu.cn/PhrWebApi"'
+            //TODO:pay url.
+            buildConfigField TYPE_STRING, ALIPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, WXPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, CCB_PAY_SAFE_URL,'"http://pay.xxzrmyy.jsu.edu.cn/CCB/CCBPayFor.aspx"'
+            buildConfigField TYPE_BOOLEAN, IS_WX_PAY, "false"
+            buildConfigField TYPE_BOOLEAN, IS_CCB_PAY, "true"
+            manifestPlaceholders = [BAIDU_MAP_API_KEY_VALUE: "ROrA12qXKadhex1WxIFTjsZ6",
+                                    UMENG_CHANNEL_VALUE    : "XXRMYY",
+                                    HOSP_CODE_VALUE        : "448526545",
+                                    API_PARTNER_ID_VALUE   : "xxrmyy",
+                                    API_SIGN_PART_VALUE    : "d94a73d7-2f88-4b92-a67b-ad0008e259e8"
+            ]
+        }//湘西州人民医院
+        csszxyy {
+            applicationId 'com.gwi.phr.csszxyy'
+            versionCode 46
+            versionName '1.2.10'
+            minSdkVersion 9
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+            // buildConfigField TYPE_STRING, SERVER_URL_FLAVOR, '"http://192.168.35.246:7790/PhrWebApi"'
+            buildConfigField TYPE_STRING, SERVER_URL_FLAVOR, '"http://phr.gwi.com.cn:7781/PhrWebApi"'
+            buildConfigField TYPE_STRING, ALIPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, WXPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, CCB_PAY_SAFE_URL,NA
+            buildConfigField TYPE_BOOLEAN, IS_WX_PAY, "true"
+            buildConfigField TYPE_BOOLEAN, IS_CCB_PAY, "false"
+            manifestPlaceholders = [BAIDU_MAP_API_KEY_VALUE: "8GhqlBXgUUKjmhqSyVRHrheZ",
+                                    UMENG_CHANNEL_VALUE    : "CSSZXYY",
+                                    HOSP_CODE_VALUE        : "444907439"]
+        }//长沙市中心医院
+        fssdwrmyy {
+            applicationId 'com.gwi.phr.fssdwrmyy'
+            versionCode 7
+            versionName '2.0.0'
+            minSdkVersion 10
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+            buildConfigField TYPE_STRING, SERVER_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, ALIPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, WXPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, CCB_PAY_SAFE_URL,NA
+            buildConfigField TYPE_BOOLEAN, IS_WX_PAY, "false"
+            buildConfigField TYPE_BOOLEAN, IS_CCB_PAY, "false"
+            manifestPlaceholders = [BAIDU_MAP_API_KEY_VALUE: "eGjuvke60sGkRGLXVlKiTMiV",
+                                    UMENG_CHANNEL_VALUE    : "FSSDWRMYY",
+                                    HOSP_CODE_VALUE        : "45607434X",
+                                    API_PARTNER_ID_VALUE   : "phr",
+                                    API_SIGN_PART_VALUE    : "p6c7s4nanolegy5vczj94vdr9rros77t"
+            ]
+        }//佛山市第五人民医院
+        dldxfszsyy {
+            applicationId 'com.gwi.phr.dldxfszsyy'
+            versionCode 1
+            versionName '1.0.0'
+            minSdkVersion 10
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+            buildConfigField TYPE_STRING, SERVER_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, ALIPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, WXPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, CCB_PAY_SAFE_URL,NA
+            buildConfigField TYPE_BOOLEAN, IS_WX_PAY, "false"
+            buildConfigField TYPE_BOOLEAN, IS_CCB_PAY, "false"
+            manifestPlaceholders = [BAIDU_MAP_API_KEY_VALUE: "eGjuvke60sGkRGLXVlKiTMiV",
+                                    UMENG_CHANNEL_VALUE    : "FSSDWRMYY",
+                                    HOSP_CODE_VALUE        : "45607434X",
+                                    API_PARTNER_ID_VALUE   : "phr",
+                                    API_SIGN_PART_VALUE    : "p6c7s4nanolegy5vczj94vdr9rros77t"
+            ]
+        }//大连大学附属中山医院
+        xtszxyy {
+            applicationId 'com.gwi.phr.xtszxyy'
+            versionCode 1
+            versionName '1.0.0'
+            minSdkVersion 10
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+            buildConfigField TYPE_STRING, SERVER_URL_FLAVOR, '"http://58.20.232.204:7781/PhrWebApi"'
+            //Todo:pay url.
+            buildConfigField TYPE_STRING, ALIPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, WXPAY_URL_FLAVOR, NA
+            buildConfigField TYPE_STRING, CCB_PAY_SAFE_URL,NA
+            buildConfigField TYPE_BOOLEAN, IS_WX_PAY, "false"
+            buildConfigField TYPE_BOOLEAN, IS_CCB_PAY, "false"
+            manifestPlaceholders = [BAIDU_MAP_API_KEY_VALUE: "eGjuvke60sGkRGLXVlKiTMiV",
+                                    UMENG_CHANNEL_VALUE    : "FSSDWRMYY",
+                                    HOSP_CODE_VALUE        : "445339701",
+                                    API_PARTNER_ID_VALUE   : "xtszxyy",
+                                    API_SIGN_PART_VALUE    : "p6c7s4nanolegy5vczj94vdr9rros77t"
+            ]
+        }//湘潭市中心医院
+
+//        x86 {
+//            ndk {
+//                abiFilter "x86"
+//            }
+//        }
+//        armv7 {
+//            ndk {
+//                abiFilter "armeabi-v7a"
+//            }
+//        }
+//        arm {
+//            ndk {
+//                abiFilter "armeabi"
+//            }
+//        }
+//        mips {
+//            ndk {
+//                abiFilter "mips"
+//            }
+//        }
+    }
+
+    dexOptions {
+        incremental false
+    }
+
+}
+
+//configurations{
+//    fssdwrmyyDebugCompile
+//    fssdwrmyyReleaseCompile
+//}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'com.mcxiaoke.volley:library:1.0.+'
+    //    compile 'org.apache.httpcomponents:httpclient:4.4'
+    //    compile 'org.apache.httpcomponents:httpcore:4.4'
+    //    compile 'org.apache.httpcomponents:httpclient-android:4.+'
+    //exclude module:"httpclient"
+    //compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile files('libs/baidumapapi_util_v3_6_1.jar')
+    compile files('libs/baidumapapi_base_v3_6_1.jar')
+    compile files('libs/baidumapapi_search_v3_6_1.jar')
+    compile files('libs/baidumapapi_cloud_v3_6_1.jar')
+    compile files('libs/baidumapapi_map_v3_6_1.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/pkcs7.jar')
+    compile files('libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar')
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/umeng-analytics-v5.2.4.jar')
+    compile project(':alipay_lib')
+    compile files('libs/pushservice-5.2.0.12.jar')
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'org.robolectric:robolectric:2.+'
+    /* Product flaover specified dependencies */
+    //    fssdwrmyyDebugCompile project(':MPChartLib')
+    //    fssdwrmyyReleaseCompile project(':MPChartLib')
+    //fssdwrmyyCompile project(':MPChartLib')
+    compile files('libs/alipaySDK.jar')
+    //ccylbjjyptCompile project(':libLNCA')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'de.greenrobot:greendao:1.3.7'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.squareup.okhttp:okhttp:2.3.+'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    compile 'org.apache.httpcomponents:httpmime:4.3'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.android.support:cardview-v7:23.2.1'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.2@aar') {
+        transitive = true
+    }
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile project(':commonLib')
+    compile project(':pullToRefreshLibrary')
+    compile project(':statefulLayout')
+    compile files('libs/LocatingSDK.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/libammsdk.jar')
+}
+

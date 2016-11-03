@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/android_margin_normal"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:layout_marginTop="@dimen/android_margin_middle"
+        android:gravity="center"
+        android:text="@string/registerHeader"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:background="@color/darker_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/android_margin_normal"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:layout_marginTop="@dimen/android_margin_normal"
+        android:gravity="center"
+        android:text="注册后即可获得更多服务与医生的专业解答"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/darker_gray" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/android_padding_middle"
+        android:paddingTop="@dimen/android_padding_normal"
+        android:paddingRight="@dimen/android_padding_middle"
+        android:paddingBottom="@dimen/android_padding_normal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/android_padding_micro"
+            android:paddingTop="@dimen/android_padding_micro" >
+
+            <EditText
+                android:id="@+id/user_register_username"
+                style="@style/single_line_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_action_person_light"
+                android:hint="请输入用户名(6-18)"
+                android:maxLength="18" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/android_padding_micro"
+            android:paddingTop="@dimen/android_padding_micro" >
+
+            <EditText
+                android:id="@+id/user_register_phone"
+                style="@style/single_line_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_action_phone_light"
+                android:hint="请输入手机号码"
+                android:inputType="text|phone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/android_padding_micro"
+            android:paddingTop="@dimen/android_padding_micro" >
+
+            <EditText
+                android:id="@+id/user_register_name"
+                style="@style/single_line_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_action_person_light"
+                android:hint="姓名"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/android_padding_micro"
+            android:paddingTop="@dimen/android_padding_micro" >
+
+            <EditText
+                android:id="@+id/user_register_id_card"
+                style="@style/single_line_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_action_id_card_light"
+                android:hint="身份证号"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/android_padding_micro"
+            android:paddingTop="@dimen/android_padding_micro" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/user_register_password_input"
+                    style="@style/single_line_edittext"
+                    android:layout_width="fill_parent"
+                    android:maxLength="18"
+                    android:drawableLeft="@drawable/ic_action_secure_light"
+                    android:hint="请输入密码(6-18)"
+                    android:inputType="textPassword" />
+
+                <CheckedTextView
+                    android:id="@+id/user_register_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/android_margin_micro"
+                    android:background="@drawable/selector_pwd_switch"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:onClick="onClick" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/register_layout_validate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/android_padding_micro"
+            android:paddingTop="@dimen/android_padding_micro" >
+
+            <EditText
+                android:id="@+id/user_register_validate_code"
+                style="@style/single_line_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="请输入验证码"
+                android:inputType="number" />
+
+            <com.gwi.selfplatform.ui.view.ValidateButton
+                android:id="@+id/user_register_validate"
+                style="@style/common_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_height"
+                android:layout_marginLeft="-4dp"
+                android:onClick="onClick"
+                android:padding="@dimen/android_padding_micro"
+                android:text="@string/btn_get_code" />
+        </TableRow>
+
+        <CheckedTextView
+            android:id="@+id/user_register_protocols"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_protocols"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:drawableLeft="@drawable/selector_checked"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/user_register_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/android_margin_middle"
+        android:layout_marginRight="@dimen/android_margin_middle"
+        android:background="@drawable/login_btn_bg"
+        android:onClick="onClick"
+        android:padding="@dimen/android_padding_normal"
+        android:text="@string/login_register"
+        android:textColor="@color/white" />
+
+</LinearLayout>
